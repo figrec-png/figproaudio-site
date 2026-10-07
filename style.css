@@ -104,3 +104,19 @@ footer a { color: var(--muted); }
   nav a:not(.btn) { display: none; }
   section { padding: 52px 0; }
 }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+table.compare { width: 100%; border-collapse: collapse; min-width: 720px; font-size: 15px; }
+.compare th, .compare td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.compare thead th { font-size: 14px; color: var(--muted); font-weight: 600; background: var(--panel); }
+.compare tbody th { font-weight: 600; color: var(--text); width: 26%; }
+.compare td { color: var(--muted); }
+.compare tr:last-child th, .compare tr:last-child td { border-bottom: 0; }
+.compare .us { background: rgba(142, 58, 145, 0.16); color: var(--text); }
+.compare thead .us { color: var(--gold); font-size: 16px; }
+.compare .yes { color: var(--gold); font-weight: 800; }
+.compare .no { color: var(--muted); }
+.muted { color: var(--muted); font-weight: 400; }
+.why-grid { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
