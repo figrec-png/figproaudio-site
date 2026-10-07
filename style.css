@@ -94,7 +94,7 @@ footer { padding: 36px 0 48px; color: var(--muted); font-size: 14px; border-top:
 footer .wrap { display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; }
 footer a { color: var(--muted); }
 
-.page { padding: 56px 0 72px; max-width: 760px; }
+.page { padding-top: 56px; padding-bottom: 72px; max-width: 760px; }
 .page h1 { font-size: 40px; margin: 0 0 8px; }
 .page h2 { font-size: 22px; margin: 32px 0 8px; }
 .page p, .page li { color: var(--muted); }
