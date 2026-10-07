@@ -78,6 +78,10 @@ ul.ticks li::before { content: ""; position: absolute; left: 4px; top: 16px; wid
 
 .buy { text-align: center; background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .buy .price { font-size: 54px; font-weight: 800; margin: 8px 0 4px; }
+.buy .price .was { font-size: 30px; font-weight: 600; color: var(--muted); margin-right: 10px; }
+.was { opacity: 0.75; font-weight: 500; }
+.sale { display: inline-block; margin-top: 6px; padding: 4px 12px; border-radius: 999px; background: var(--plum); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; }
 .buy .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
 
 .specs { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
