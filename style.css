@@ -83,6 +83,12 @@ ul.ticks li::before { content: ""; position: absolute; left: 4px; top: 16px; wid
 .sale { display: inline-block; margin-top: 6px; padding: 4px 12px; border-radius: 999px; background: var(--plum); color: #fff;
   font-size: 13px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; }
 .buy .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+.buy-also { margin: 36px auto 0; padding-top: 28px; border-top: 1px solid var(--line); max-width: 720px; }
+.buy-also-text { color: var(--muted); }
+.buy-also-text strong { color: var(--text); }
+.buy-also-price { display: block; margin-top: 6px; font-size: 22px; font-weight: 700; color: var(--text); }
+.buy-also-price .was { font-size: 16px; color: var(--muted); margin-right: 8px; }
+.buy-also .ctas { margin-top: 18px; }
 
 .specs { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
