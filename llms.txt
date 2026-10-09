@@ -1,0 +1,18 @@
+# Fig Pro Audio
+
+> Fig Pro Audio (Aldana Consulting LLC) makes guitar plugins for Mac and Windows: FigAMP, a guitar amp simulator, and FigGutEQ, an EQ made only for guitar. Both are one-time purchases with a free, fully featured 14-day trial, sold through Moonbase. Formats: Audio Unit (Mac), VST3 (Mac and Windows) and a standalone app. Requirements: macOS 11 or later (Apple Silicon or Intel), or Windows 10/11 64-bit. No subscription, no dongle.
+
+## Products
+
+- [FigAMP](https://figproaudio.com/): guitar amp plugin. Seven classic amp voices (Singer, Brit 45, Chime 30, Black Panel, Hot 20, Liquid 100, Cali V), each with a Classic Tone button; four studio console preamps (Brit 73, NY 312, Brit 4K, London A); compressor pedal; six matched cabinets plus your own impulse responses; tempo-synced delay; room reverb; Stereo Shift doubler; noise gate; Stereo/Mono switch; 16 factory presets and your own presets. Version 1.2.2. Price: $49 (MSRP $99). Buy: https://aldana-consulting-llc.moonbase.sh/buy/figamp. Trial: https://aldana-consulting-llc.moonbase.sh/download/figamp.
+- [FigGutEQ](https://figproaudio.com/figguteq.html): the guitar-only EQ, built to sit next to FigAMP. Eight bands named for where a guitar lives (Low Cut, Bottom, Mud, Mids, Bite, Presence, Air, High Cut) with frequency and note readouts; Pick Attack (boost or cut only on the pick transient); Tuning Lock (marks open strings and moves the low end with the tuning, Standard E down to 8-string F#); real-time In/Out analyzer; zero latency with optional 2x/4x oversampling; STEREO/MONO switch with L/R meters; 18 presets, each in a PRE AMP and a POST AMP version. Version 1.0.0. Price: $29 launch price (MSRP $49). Buy: https://aldana-consulting-llc.moonbase.sh/buy/figguteq. Trial: https://aldana-consulting-llc.moonbase.sh/download/figguteq.
+
+## Pages
+
+- [Why FigAMP](https://figproaudio.com/why.html): how FigAMP compares with all-in-one suites, signature packs and free capture players.
+- [Support](https://figproaudio.com/support.html): installing, activating and common questions for both plugins. Email support@figproaudio.com.
+- [Privacy](https://figproaudio.com/privacy.html) and [Terms](https://figproaudio.com/terms.html).
+
+## Licensing
+
+Buy once, activate on your own computers by signing in with your Fig Pro Audio (Moonbase) account inside the plugin. The trial is fully featured for 14 days; afterwards the plugin passes audio through unprocessed until activated.
