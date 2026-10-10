@@ -8,10 +8,10 @@
   var FAQ = [
     { id: "install-mac", label: "Install on Mac",
       keys: ["install mac", "mac install", "macos", "component", "au ", "audio unit", "copy", "where do i put", "install"],
-      answer: "On a Mac, unzip the download and double-click FigAMP-1.3.0.pkg. The installer is signed and notarized by Apple, so there are no security warnings; it asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places. Then restart your DAW. (The loose .component, .vst3 and .app files are also in the zip if you prefer to copy them by hand.)" },
+      answer: "On a Mac, unzip the download and double-click FigAMP-1.3.0-Mac.pkg. The installer is signed and notarized by Apple, so there are no security warnings; it asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places. Then restart your DAW. (The loose .component, .vst3 and .app files are also in the zip if you prefer to copy them by hand.)" },
     { id: "install-win", label: "Install on Windows",
       keys: ["windows", "pc", "vst3 folder", "program files", "exe", "install windows"],
-      answer: "On Windows, unzip the download and run FigAMP-1.3.0-Setup.exe. It installs the VST3 plugin into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime download is needed. Then restart your DAW and rescan plugins if it asks." },
+      answer: "On Windows, unzip the download and run FigAMP-1.3.0-Windows-Setup.exe. It installs the VST3 plugin into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime download is needed. Then restart your DAW and rescan plugins if it asks." },
     { id: "smartscreen", label: "Windows protected your PC",
       keys: ["smartscreen", "protected your pc", "windows protected", "run anyway", "unknown publisher", "blocked"],
       answer: "That blue \"Windows protected your PC\" screen can appear the first time you run the FigAMP setup file or the standalone app, because it is a new publisher to Windows. Click More info, then Run anyway. It never affects the plugin inside your DAW." },
