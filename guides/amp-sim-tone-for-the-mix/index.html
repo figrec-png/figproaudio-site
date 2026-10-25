@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dial an Amp Sim for the Mix, Not for Solo</title>
+<meta name="description" content="Why the guitar tone that sounds huge on its own gets lost in a song, and how to set gain, EQ, cab and width on an amp sim so it sits in the mix.">
+<!-- [CANONICAL URL PLACEHOLDER: this assumes the folder layout in builder/figproaudio/guides/README.md. If you publish at a different address, change this line and og:url to match.] -->
+<link rel="canonical" href="https://figproaudio.com/guides/amp-sim-tone-for-the-mix/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<!-- <link rel="stylesheet" href="/chat.css"> -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dial an Amp Sim for the Mix, Not for Solo">
+<meta property="og:description" content="Why the guitar tone that sounds huge on its own gets lost in a song, and how to set gain, EQ, cab and width on an amp sim so it sits in the mix.">
+<meta property="og:url" content="https://figproaudio.com/guides/amp-sim-tone-for-the-mix/">
+<meta property="og:image" content="https://figproaudio.com/img/figamp-1.3.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<!-- DRAFT from builder/figproaudio/guides (issue #44). Not published. Search this file for "OWNER TO CONFIRM" and "[" before you put it live. -->
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt="">Fig Pro Audio</a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<a href="/figguteq.html">FigGutEQ</a>
+<a href="/figstrip.html">FigSTRIP</a>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to dial an amp sim for the mix, not for solo</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP</em></p>
+<p>You know the moment. You spend half an hour on a guitar tone that sounds enormous on its own: deep lows, endless sustain, sparkly top. Then you unmute the drums, bass and vocal, and the guitar turns into a fizzy blanket that either buries everything or disappears.</p>
+<p>That isn't your amp sim being bad, and it isn't you being bad at tone. A tone that sounds great alone and a tone that works in a song are two different targets. When a guitar plays solo, it has the whole frequency range to itself, so more of everything sounds better. In a mix, it has to share. The bass and kick drum own the low end, the vocal owns a chunk of the midrange, and cymbals own the very top. The guitar's job is to fill the space between them with something clear and characterful.</p>
+<p>Here's how I approach that, whichever amp plugin you're using.</p>
+<h2>Start with the song playing</h2>
+<p>The single most useful habit: dial guitar tones with the rest of the song playing, even if it's only a rough drum loop and a scratch bass part. Solo the guitar to check for problems like noise or clicks, but make tone decisions in context. If you don't have other parts yet, put on a finished song in a similar style, at a sensible volume, and use it as a reference for how much low end and brightness a guitar normally has.</p>
+<p>Also, keep your listening level moderate and steady. Our ears hear more bass and treble when things are louder, so a tone that impresses you at high volume can sound thin once you turn down, and a tone dialled very quietly can turn harsh when you turn up. Check at a couple of volumes before you commit.</p>
+<h2>Use less gain than you think</h2>
+<p>This is the big one. Gain feels great under your fingers because it adds sustain and makes everything easier to play. But every extra notch of distortion compresses the sound, blurs the attack of each note and adds fuzz across the whole frequency range. In a dense mix that blur is what turns a guitar into a wall of noise. Distortion also makes any tuning problem more obvious; Sound On Sound's guide to recording electric guitars notes that "Distortion will exacerbate this, and all tuning problems" (<a href="https://www.soundonsound.com/techniques/optimising-electric-guitars-studio">Sound On Sound</a>).</p>
+<p>Try this: set the gain where it feels good to play, then back it off until it's just slightly less saturated than you'd like. Record a pass and listen back with the band. Most of the time it sounds heavier in the mix than the high-gain version, because each note keeps its edge. Stacked, double-tracked parts in particular need less gain each than a single guitar would.</p>
+<h2>Shape the low end</h2>
+<p>Guitar cabinets and close-miked tones carry plenty of low end that sounds great on its own and fights with the bass guitar and kick drum in a song. Two moves help:</p>
+<ul>
+<li><strong>High-pass the guitar.</strong> Put a high-pass filter after the amp, on your DAW's EQ, and start it somewhere around 80 to 120 Hz, then sweep it up while the bass is playing until the guitar stops sounding thick and muddy but before it sounds thin. Heavier styles often go higher than you'd expect. <a href="/figguteq.html">FigGutEQ</a> can do the same job if you already use it.</li>
+<li><strong>Ease the amp's bass knob.</strong> On many amps, the bass control also changes how the distortion behaves. Turning it down a little before the gain stage can tighten a high-gain tone more cleanly than EQ afterwards.</li>
+</ul>
+<p>These numbers are starting points, not rules. Your ears and the song decide.</p>
+<h2>Tame the fizz on top</h2>
+<p>The very top end of an amp sim (the region above where a real guitar speaker naturally rolls off) is where harsh, papery fizz lives. A gentle low-pass filter after the amp, on your DAW's EQ, starting around 6 to 8 kHz and moving down until the fizz goes away without losing clarity, often does more than any other single move. If your amp sim lets you move the virtual microphone on the cabinet, moving it slightly off the centre of the speaker usually softens the top end too.</p>
+<h2>Make room for the vocal in the mids</h2>
+<p>The midrange is where a guitar sounds like a guitar, and it's also where the vocal sits. Rather than scooping the mids (which sounds big alone and vanishes in a mix), keep them and make a small, targeted cut only where the guitar and vocal clash. Sweep a narrow boost through the mids while the vocal plays, find where the guitar makes the vocal harder to hear, then turn that boost into a gentle cut of a few dB. A little goes a long way.</p>
+<h2>Decide on width on purpose</h2>
+<p>A stereo amp patch with wide delay and room sounds lush alone and can swamp a mix. Some choices that work well:</p>
+<ul>
+<li><strong>Mono for the main rhythm.</strong> Record one part in mono and pan it, then record a second take and pan it the other way. Two real performances, panned apart, sound wider and clearer than one stereo patch, because the small timing differences between takes are what make it feel big.</li>
+<li><strong>Fake doubles for quick ideas.</strong> A detune or doubler effect is a handy shortcut when you don't have time to track a second part, but it doesn't replace a real double for a main rhythm.</li>
+<li><strong>Effects to taste, then halve them.</strong> Delay and room that sound right in solo are usually too much once the band is in. Bring them back until you notice them missing when you switch them off.</li>
+</ul>
+<h2>Compare at the same volume</h2>
+<p>Louder almost always sounds better, so any tone change that also makes the guitar louder will fool you. When you compare two settings, two presets or two amp sims, match their levels first. If the plugin has an output meter, use it. Then decide by ear.</p>
+<h2>A short routine</h2>
+<p>When I'm setting a guitar tone for a song, this is roughly my order:</p>
+<ol>
+<li>Pick an amp and a starting preset that's close to the style.</li>
+<li>Play along with the song and set the gain a little lower than feels perfect.</li>
+<li>On your DAW's EQ, high-pass until the low end clears up, low-pass until the fizz goes.</li>
+<li>Make one small mid cut if the vocal is fighting the guitar.</li>
+<li>Decide mono or stereo, and pull effects back.</li>
+<li>Level-match and compare with the version you started with.</li>
+</ol>
+<p>It takes ten minutes, and it saves an evening of wondering why the mix sounds crowded.</p>
+<h2>Where FigAMP fits</h2>
+<p>I built FigAMP so the first two steps take seconds instead of half an hour. Each of its eight amps has a Classic Tone button that loads that amp's sweet spot with a matched cabinet, and the amps are level-matched, so switching between them doesn't fool you with a volume jump. A Stereo/Mono switch sets the width for the track, the cabinet section has a mic position control and loads your own impulse responses, and a needle VU meter shows what's leaving the plugin. FigAMP has no high-pass or low-pass knobs. There's only fixed filtering inside the amps and cabs, so those sweeps stay on your DAW's EQ or FigGutEQ. If you want to try these steps on your own songs, the <a href="https://aldana-consulting-llc.moonbase.sh/download/figamp">FigAMP trial is free for 14 days</a> with every feature working, on Mac and Windows. <!-- Trial link pending Al's confirmation in #38. --></p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/clean-di-guitar-signal/">How to record a clean DI guitar signal</a> · <a href="/guides/record-bass-di-and-amp-at-home/">How to record bass DI plus amp tone at home</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<!-- Optional: the site's own chat widget. Every existing page loads it; uncomment the next line (and the chat.css line in the head) if you want it on this page too. -->
+<!-- <script src="/chat.js" defer></script> -->
+</body>
+</html>
