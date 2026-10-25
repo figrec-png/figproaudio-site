@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Record Bass DI Plus Amp Tone at Home</title>
+<meta name="description" content="Record a clean bass DI and an amp or amp-sim track together, line them up in time and polarity, and blend them so the low end stays solid.">
+<!-- [CANONICAL URL PLACEHOLDER: this assumes the folder layout in builder/figproaudio/guides/README.md. If you publish at a different address, change this line and og:url to match.] -->
+<link rel="canonical" href="https://figproaudio.com/guides/record-bass-di-and-amp-at-home/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<!-- <link rel="stylesheet" href="/chat.css"> -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record Bass DI Plus Amp Tone at Home">
+<meta property="og:description" content="Record a clean bass DI and an amp or amp-sim track together, line them up in time and polarity, and blend them so the low end stays solid.">
+<meta property="og:url" content="https://figproaudio.com/guides/record-bass-di-and-amp-at-home/">
+<meta property="og:image" content="https://figproaudio.com/img/figamp-1.3.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<!-- DRAFT from builder/figproaudio/guides (issue #44). Not published. Search this file for "OWNER TO CONFIRM" and "[" before you put it live. -->
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt="">Fig Pro Audio</a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<a href="/figguteq.html">FigGutEQ</a>
+<a href="/figstrip.html">FigSTRIP</a>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to record bass DI plus amp tone at home</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP</em></p>
+<p>I play bass as well as guitar, and bass is the instrument where recording direct makes the most sense at home. A clean DI gives you a solid, even low end that's easy to mix. An amp, real or simulated, gives you the growl, grit and midrange that let the bass be heard on small speakers. Most bass tones you love on records are some blend of the two.</p>
+<p>The catch is that two versions of the same bass part only blend well if they line up. Get that wrong and the low end goes thin and hollow, and it's easy to blame the amp, the bass or the strings when the real problem is timing. This guide covers how to record both, line them up and blend them.</p>
+<h2>Option 1: DI now, amp later (the easiest)</h2>
+<p>If you only have one instrument input, or you're not sure what amp tone you want yet, do this:</p>
+<ol>
+<li>Plug the bass into your interface's instrument (Hi-Z) input.</li>
+<li>Set the gain with your hardest playing, so the loudest notes peak well below the top of the meter.</li>
+<li>Record the DI on its own track.</li>
+<li>Duplicate the track, or send it to a second track, and put your amp plugin on the copy.</li>
+</ol>
+<p>Because both tracks come from the same recording, they're already perfectly in time, and you can change the amp sound whenever you like. One thing to check: some plugins add a little processing delay. Modern DAWs compensate for that automatically (usually called plugin delay compensation), so leave that setting switched on.</p>
+<p>This is the approach I'd recommend to most people starting out. You get the full DI-plus-amp sound with nothing to align.</p>
+<h2>Option 2: DI and a real amp at the same time</h2>
+<p>If you have a bass amp and want to capture it as you play, you need to split the signal: one path to the interface as a DI, one to the amp.</p>
+<ul>
+<li><strong>A DI box with a "thru" output</strong> is the usual way. The bass goes into the DI box, the "thru" goes to the amp, and the DI box's balanced output goes to a mic or line input on your interface.</li>
+<li><strong>Some bass amps have a DI output on the back.</strong> That works too, but check whether it's taken before or after the amp's EQ (the manual will say), because a post-EQ DI isn't a clean DI.</li>
+<li><strong>Record the amp with a mic, or from the amp's line or cab-sim output</strong> if it has one. A line output is easier at home because the room and the neighbours don't get involved.</li>
+</ul>
+<p>Now you have two tracks recorded at the same moment, but they won't necessarily be lined up. A mic in front of a speaker hears the sound slightly later than the DI, because sound in air takes about a millisecond to travel roughly a foot (34 cm). Even a few centimetres of distance shows up as a small delay.</p>
+<h2>Option 3: re-amping a DI through a real amp</h2>
+<p>Re-amping means sending a DI you've already recorded back out of your interface into a real amp, then recording the amp. It's a great way to try real amps on a finished part. It also introduces the biggest timing problem, because the signal makes a round trip out of the interface and back in, and comes back a few milliseconds late.</p>
+<p>Sound On Sound puts it plainly: "a common mistake is the failure to realign the re‑amped track to the DI," and "Even a couple of milliseconds is enough to introduce comb filtering, which will thin out the bass sound when the re‑amped cab is combined with the DI" (<a href="https://www.soundonsound.com/techniques/mixing-metal">Sound On Sound, "Mixing Metal"</a>).</p>
+<p>Many DAWs have a tool that measures that round trip for you by sending a test "ping" out and timing its return. Check your DAW's manual for latency or round-trip measurement. Even then, measure again each session rather than trusting last time's number. Users on the REAPER forum report that the extra latency of a USB interface can be "slightly different each time" the device reconnects (<a href="https://forum.cockos.com/archive/index.php/t-289618.html">Cockos forum</a>). If your interface needs a re-amp box or a level adapter between its output and the amp's input, read the interface and amp manuals first so you don't send a line-level signal into an instrument input too hot.</p>
+<h2>Lining the tracks up</h2>
+<p>Whichever way you recorded, check alignment before you start mixing:</p>
+<ol>
+<li>Zoom right in on a clear, sharp note at the start of a phrase, ideally one where you played hard with nothing else ringing.</li>
+<li>Compare the start of the waveform on the DI and the amp track. If the amp track starts later, move it earlier until the first peaks line up.</li>
+<li>Look at the shape too. If one wave goes up where the other goes down, the tracks are in opposite polarity. Flip the polarity on one of them.</li>
+<li>Listen to the blend with both tracks at similar levels, and flip the polarity back and forth. The setting with the fuller, deeper low end is the right one.</li>
+</ol>
+<p>Small nudges matter here. If your DAW lets you move a clip by samples rather than by grid steps, use that.</p>
+<h2>Blending them</h2>
+<p>With the tracks lined up, the blend is about giving each one a job:</p>
+<ul>
+<li><strong>The DI is the foundation.</strong> It carries the deep, even low end. A gentle low-pass filter on it (removing some of the clicky top) can help, so the attack comes from the amp track instead.</li>
+<li><strong>The amp is the character.</strong> It carries the growl, the midrange and the grit. A high-pass filter on the amp track, so its low end doesn't double up on the DI's, keeps the bottom tight and avoids the two tracks fighting.</li>
+<li><strong>Set levels with the whole mix playing.</strong> Bring up the DI until the low end feels solid, then add amp until the bass is audible on small speakers or headphones. Check on a phone speaker if you can; if you can't hear the bass line there, it needs more amp.</li>
+<li><strong>Compress the blend, not just one track.</strong> Sending both tracks to a bass bus and compressing that bus lightly keeps the blend consistent as you play harder and softer.</li>
+</ul>
+<h2>A quick checklist</h2>
+<ul>
+<li>Bass into a Hi-Z input or a DI box; gain set with your hardest playing.</li>
+<li>Easiest route: record the DI once and put an amp plugin on a copy.</li>
+<li>Real amp or re-amp: measure the delay and line the tracks up.</li>
+<li>Check polarity by ear on the blend, and keep the fuller one.</li>
+<li>DI for low end, amp for mids and grit; filter each so they don't overlap.</li>
+</ul>
+<p>Get the alignment right and you'll find the blend does most of the work. The bass sounds both deep and clear, and you spend far less time fighting it with EQ.</p>
+<h2>Where FigAMP fits</h2>
+<p>FigAMP has a Polarity switch designed for blending with a DI or a second amp, a Stereo/Mono switch so a bass track can stay mono, and an INPUT knob with a level light to match your interface. <!-- [OWNER TO CONFIRM: whether FigAMP's amps are suitable for bass, and which amps and presets to recommend for it. If FigAMP isn't meant for bass, change this section to point to the guitar guides and FigSTRIP for the bass bus.] --> If you'd like to try it on your own DI tracks, the <a href="https://aldana-consulting-llc.moonbase.sh/download/figamp">FigAMP 14-day trial</a> has every feature working, on Mac and Windows. <!-- Trial link pending Al's confirmation in #38. --></p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/clean-di-guitar-signal/">How to record a clean DI guitar signal</a> · <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<!-- Optional: the site's own chat widget. Every existing page loads it; uncomment the next line (and the chat.css line in the head) if you want it on this page too. -->
+<!-- <script src="/chat.js" defer></script> -->
+</body>
+</html>

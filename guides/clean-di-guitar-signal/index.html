@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Record a Clean DI Guitar Signal: No Noise, No Clipping</title>
+<meta name="description" content="How to get a quiet, unclipped DI guitar signal into your DAW: interface gain, cables, hum and gating, explained by a plugin developer who plays.">
+<!-- [CANONICAL URL PLACEHOLDER: this assumes the folder layout in builder/figproaudio/guides/README.md. If you publish at a different address, change this line and og:url to match.] -->
+<link rel="canonical" href="https://figproaudio.com/guides/clean-di-guitar-signal/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<!-- <link rel="stylesheet" href="/chat.css"> -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Record a Clean DI Guitar Signal: No Noise, No Clipping">
+<meta property="og:description" content="How to get a quiet, unclipped DI guitar signal into your DAW: interface gain, cables, hum and gating, explained by a plugin developer who plays.">
+<meta property="og:url" content="https://figproaudio.com/guides/clean-di-guitar-signal/">
+<meta property="og:image" content="https://figproaudio.com/img/figamp-1.3.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<!-- DRAFT from builder/figproaudio/guides (issue #44). Not published. Search this file for "OWNER TO CONFIRM" and "[" before you put it live. -->
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt="">Fig Pro Audio</a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<a href="/figguteq.html">FigGutEQ</a>
+<a href="/figstrip.html">FigSTRIP</a>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to record a clean DI guitar signal (no noise, no clipping)</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP</em></p>
+<p>Every amp sim, including the one I make, starts with the same thing: the raw signal from your guitar, recorded straight into your interface. Engineers call that the DI (direct input). If the DI is noisy or clipped, no plugin can fix it later, because the amp sim's job is to amplify what it's given, flaws included. One amp-sim maker puts it plainly in its support guide: the digital amp models "do not generate noise by themselves. They simply amplify the noise at the input" (<a href="https://www.overloud.com/node/367">the maker's support page</a>).</p>
+<p>So this guide is about the five minutes of setup before you hit record. None of it needs new gear, and all of it applies whichever amp plugin you use.</p>
+<h2>1. Plug into the right input</h2>
+<p>Most home interfaces have a jack labelled "Inst", "Hi-Z" or marked with a little guitar icon, or a switch next to the input that turns it into an instrument input. Use it. A passive guitar pickup wants to see a high-impedance input. Plug it into a line or mic input instead and you'll usually hear a duller, thinner, quieter signal, and you'll be tempted to crank the gain to make up for it, which brings up the noise floor.</p>
+<p>If your interface has no instrument input at all, a DI box between the guitar and a mic input does the same job.</p>
+<h2>2. Set the interface gain with your loudest playing</h2>
+<p>This is where most of the confusion lives. Advice online ranges from "as hot as possible" to "turn the gain all the way down", and players end up guessing. I see the same frustration in forum threads about every brand of amp sim.</p>
+<p>Here's the approach I use:</p>
+<ol>
+<li>Turn the interface gain down.</li>
+<li>Play the hardest thing you'll play in the song: a big open chord, dug in, with your guitar's volume and tone fully up.</li>
+<li>Bring the gain up until the input meter in your DAW peaks somewhere around the upper third of the meter, and never touches the top.</li>
+<li>Play it again, harder. If the clip light ever comes on, back off a few dB.</li>
+</ol>
+<p>A common rule of thumb is to leave peaks somewhere around -12 to -6 dBFS (decibels below digital full scale, where 0 dBFS is the ceiling). Treat that as a starting point, not a law. The point is to leave headroom, because a clipped DI is ruined for good, while a DI that's a little quiet is fine. At 24-bit, which is the default recording format in most DAWs, the noise floor of the recording itself is far below anything your guitar or room will produce, so there's no reason to push it hot. Check that your DAW project is set to 24-bit (or 32-bit float) before you start.</p>
+<p><strong>A note on amp sims:</strong> a level that's safe for the recording isn't automatically the level your amp sim expects. Every interface delivers a different level at the same gain setting, so the same plugin preset can sound too distorted on one interface and too clean on another. That's why I added an INPUT knob with a level light to FigAMP 1.3: you set the interface for a clean recording first, then match the plugin to it with that one knob, so the presets hit the amp the way they were designed to. If your amp sim has a similar input control, use it rather than chasing the sound with your interface gain.</p>
+<h2>3. Hunt down hum before you blame the plugin</h2>
+<p>Single-coil pickups are little antennas. Sitting a metre from a computer, a monitor and a phone charger, they pick up hum and buzz, and a high-gain amp setting multiplies it. Before reaching for noise reduction, try these, one at a time:</p>
+<ul>
+<li><strong>Face a different way.</strong> Single-coil hum changes a lot with the angle of the guitar to the noise source. Rotate on your chair while holding a chord and listen for the quietest direction. It's free and it often works.</li>
+<li><strong>Move away from the screen.</strong> Older monitors and some laptop power bricks are loud offenders. Even a metre more of distance helps.</li>
+<li><strong>Try the middle positions.</strong> On a lot of guitars with three single-coils, the in-between pickup positions are hum-cancelling, or close to it.</li>
+<li><strong>Swap the cable.</strong> A cheap or worn cable can crackle and pick up noise. Keep it reasonably short and away from power cables, and cross power cables at right angles if they have to meet.</li>
+<li><strong>Unplug things.</strong> Phone chargers, LED dimmers and some USB devices add their own whine. If the noise changes when you unplug something, you've found it.</li>
+<li><strong>Check your hands.</strong> If the hum drops when you touch the strings, that's normal behaviour for many guitars, not a fault.</li>
+</ul>
+<p>If you've tried all that and hum is still there with the guitar's volume up, that's a grounding or electrical issue in the room and worth getting a qualified person to look at. Don't modify mains wiring or remove ground connections yourself.</p>
+<h2>4. Gate with a light touch, and gate before the gain</h2>
+<p>A noise gate cuts the signal when you stop playing, which hides hiss and hum between phrases. It can't do anything about noise under a note that's ringing, and set too hard it chops off the tails of your notes.</p>
+<p>Two habits help:</p>
+<ul>
+<li><strong>Put the gate before the distortion.</strong> The noise is smallest before the amp multiplies it, so the gate can tell playing from noise more easily there. Many amp plugins put their gate at the input for this reason. <!-- [OWNER TO CONFIRM: where FigAMP's gate sits in its chain; if it's at the input, say so here.] --></li>
+<li><strong>Set the threshold by ear.</strong> Play a chord, let it ring out, and raise the threshold until the hiss disappears in the silence after the note dies, then back it off slightly so the decay still sounds natural.</li>
+</ul>
+<p>One more habit: record the DI dry, and do your gating in the amp plugin. That way you can always change your mind later.</p>
+<h2>5. Record the DI, monitor through the amp</h2>
+<p>The real superpower of recording direct is that you can keep the clean DI and change the amp sound at any time. In practice that means:</p>
+<ul>
+<li>Record-arm the guitar track and put your amp plugin on that track, so you hear the amp while you play, but what gets recorded is the clean DI.</li>
+<li>Keep your interface's buffer size low while tracking so the amp feels responsive under your fingers, then raise it again for mixing.</li>
+<li>Name and keep your DI takes. If you later want a different amp, a tighter tone or a new cab, you just change the plugin. No re-recording.</li>
+</ul>
+<h2>A quick checklist</h2>
+<p>Before you press record:</p>
+<ul>
+<li>Guitar in the instrument (Hi-Z) input.</li>
+<li>Gain set with your hardest playing; peaks well below the top of the meter, and no clip light.</li>
+<li>Project at 24-bit or 32-bit float.</li>
+<li>Hum checked: angle, distance, pickup position, cable, chargers.</li>
+<li>Gate before the gain, set by ear.</li>
+<li>Amp plugin's input level matched to your interface.</li>
+</ul>
+<p>None of this is glamorous, but it's the difference between a tone that sounds like a real amp and one that fizzes and hisses no matter what you do with the knobs.</p>
+<h2>Try it with FigAMP</h2>
+<p>If you'd like to hear what a clean DI does in an amp built around this workflow, FigAMP has an INPUT knob with a level light, a VU meter on the output, a built-in noise gate and a Classic Tone button on each of its eight amps that loads its sweet spot with a matched cabinet. The <a href="https://aldana-consulting-llc.moonbase.sh/download/figamp">14-day trial is fully working</a> on Mac and Windows, so you can try it on your own interface and guitar before deciding anything. <!-- Trial link pending Al's confirmation in #38. --></p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a> · <a href="/guides/record-bass-di-and-amp-at-home/">How to record bass DI plus amp tone at home</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<!-- Optional: the site's own chat widget. Every existing page loads it; uncomment the next line (and the chat.css line in the head) if you want it on this page too. -->
+<!-- <script src="/chat.js" defer></script> -->
+</body>
+</html>
