@@ -49,11 +49,17 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/"><img src="img/logo.png" alt="">Fig Pro Audio</a>
+    <a class="brand" href="/"><img src="img/logo.png" alt=""><span>Fig Pro Audio</span></a>
     <nav>
-      <a href="/">FigAMP</a>
-      <a href="figguteq.html">FigGutEQ</a>
-      <a href="figstrip.html">FigSTRIP</a>
+      <div class="menu">
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+        <div class="menu-list" id="plugins-menu">
+          <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+          <a href="figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+          <a href="figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+          <a href="figverb.html" aria-current="page"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+        </div>
+      </div>
       <a href="figverb.html#modes">Modes</a>
       <a href="/guides/">Guides</a>
       <a href="support.html">Support</a>
@@ -180,5 +186,6 @@
   </div>
   <div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigVERB isn't affiliated with or endorsed by any maker of reverb hardware.</div>
 </footer>
+<script src="nav.js" defer></script>
 </body>
 </html>
