@@ -19,14 +19,20 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/"><img src="img/logo.png" alt="">Fig Pro Audio</a>
+    <a class="brand" href="/"><img src="img/logo.png" alt=""><span>Fig Pro Audio</span></a>
     <nav>
       <a href="why.html">Why FigAMP</a>
       <a href="/#amps">Amps</a>
       <a href="/#features">Features</a>
-      <a href="figguteq.html">FigGutEQ</a>
-      <a href="figstrip.html">FigSTRIP</a>
-      <a href="figverb.html">FigVERB</a>
+      <div class="menu">
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+        <div class="menu-list" id="plugins-menu">
+          <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+          <a href="figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+          <a href="figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+          <a href="figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+        </div>
+      </div>
       <a href="/guides/">Guides</a>
       <a href="support.html">Support</a>
       <a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
@@ -118,5 +124,6 @@
   <div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
 </footer>
 <script src="chat.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>
