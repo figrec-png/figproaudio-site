@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started with FigVERB: Free Guitar Reverb</title>
+<meta name="description" content="How to activate and use FigVERB, the free guitar reverb: insert or send, the five modes, Decay and Size, and Pre-Delay, Low Cut and Duck to keep the guitar clear.">
+<link rel="canonical" href="https://figproaudio.com/guides/getting-started-with-figverb/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/chat.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get Started with FigVERB: Free Guitar Reverb">
+<meta property="og:description" content="How to activate and use FigVERB, the free guitar reverb: insert or send, the five modes, Decay and Size, and Pre-Delay, Low Cut and Duck to keep the guitar clear.">
+<meta property="og:url" content="https://figproaudio.com/guides/getting-started-with-figverb/">
+<meta property="og:image" content="https://figproaudio.com/img/figverb-1.0.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt=""><span>Fig Pro Audio</span></a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<div class="menu">
+  <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+  <div class="menu-list" id="plugins-menu">
+    <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+    <a href="/figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+    <a href="/figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+    <a href="/figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+  </div>
+</div>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to get started with FigVERB</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigVERB</em></p>
+<p>FigVERB is a free reverb made for guitar, in the spirit of the studio rack reverbs of the late '80s. It has five modes and one row of knobs, so it's quick to learn. This guide covers activating it, choosing a mode, and the three controls that keep a reverb from swamping your guitar: Pre-Delay, Low Cut and Duck.</p>
+<h2>Install it and activate it free</h2>
+<p><a href="https://aldana-consulting-llc.moonbase.sh/download/figverb">Download FigVERB</a> and run the installer. It's for Mac only (macOS 11 or later, Apple Silicon or Intel) and installs the Audio Unit and VST3. Restart your DAW afterwards.</p>
+<p>Open FigVERB on a track and click <strong>ACTIVATE FREE</strong>. Your browser opens; sign in with your Fig Pro Audio account, or make one for free, and FigVERB is yours on that computer. There's no trial and no time limit. Until you activate, it passes your guitar through dry. <strong>MORE OPTIONS</strong> has offline activation.</p>
+<h2>Insert or send?</h2>
+<p>You can use FigVERB two ways:</p>
+<ul>
+<li><strong>On the guitar track</strong>, after your amp plugin. Use <strong>Mix</strong> to set how much reverb you hear. Mix is equal power, so the overall level stays steady as you turn it.</li>
+<li><strong>On an aux or send track</strong>, with Mix all the way to wet. Then each track's send decides how much reverb it gets, and several guitars can share one space.</li>
+</ul>
+<p>Either works. A send is handy when more than one part needs the same room.</p>
+<h2>Choose a mode</h2>
+<p>Each mode is its own reverb, not a preset of one algorithm. Mode changes crossfade between two complete reverbs, so you can switch while you play without clicks.</p>
+<ul>
+<li><strong>Hall:</strong> large and slow to build, with a long low end and a dark, smooth top. The lead and arpeggio reverb.</li>
+<li><strong>Plate:</strong> dense from the first moment and bright. The classic plate sound on a guitar.</li>
+<li><strong>Room:</strong> small to medium, with strong early reflections and a natural decay. Good on rhythm parts and crunch.</li>
+<li><strong>Chamber:</strong> mid-size, very dense and a little darker. Lovely on clean tones.</li>
+<li><strong>Ambience:</strong> mostly early reflections and a very short tail, for space around the guitar without a wash.</li>
+</ul>
+<p>Or start from one of the 13 guitar presets, from Clean Arp Hall and 80s Lead Hall to Rhythm Room and Tight Ambience, then turn a knob or two.</p>
+<h2>Set Decay and Size</h2>
+<p><strong>Decay</strong> runs from 0.2 to 20 seconds, and each mode scales it to suit its space. The LED readout shows the real seconds you get, so you don't have to guess. A useful check: play a phrase, stop, and listen to how long the tail hangs. If it's still going when the next phrase starts on a busy part, shorten it. <strong>Size</strong> changes how big the space is, and like Mode it crossfades so it doesn't click.</p>
+<h2>Keep the guitar in front</h2>
+<p>These three controls are what make FigVERB a guitar reverb:</p>
+<ul>
+<li><strong>Pre-Delay</strong> (up to 250 ms) holds the reverb back for a moment, so your pick attack lands before the space does. Turn it up if the guitar sounds pushed back in the mix.</li>
+<li><strong>Low Cut</strong> takes 20 to 500 Hz out of the reverb only. Your dry guitar keeps its low end, while the tail stays out of the bass and kick.</li>
+<li><strong>Duck</strong> dips the reverb while you play and lets it bloom in the gaps. Fast parts stay clear, and the tail fills the space between phrases. It's especially good on solos.</li>
+</ul>
+<h2>Shape the tail</h2>
+<p><strong>Tone</strong> darkens the tail as it decays, the way air does; turn it toward bright for more sparkle. <strong>Mod</strong> adds slow, random movement for a smooth shimmer, with no audible pitch wobble at the default setting. <strong>Output</strong> sets the level leaving the plugin, and <strong>Bypass</strong> lets you compare with and without.</p>
+<h2>Save your own presets</h2>
+<p>When you find a space you like for a song, save it as your own preset so you can use it again. The LED readout shows the preset name, the decay in seconds, or whichever knob you're touching.</p>
+<h2>Where to go next</h2>
+<p>Put FigVERB after <a href="/guides/getting-started-with-figamp/">FigAMP</a> for a studio hall, plate or chamber behind your amp, and <a href="/guides/getting-started-with-figguteq/">FigGutEQ</a> in front to shape the guitar first. The same free account activates them all, and FigVERB's <strong>MORE FIG AUDIO</strong> key takes you straight to them.</p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a> · <a href="/guides/getting-started-with-figamp/">How to get started with FigAMP</a> · <a href="/guides/getting-started-with-figstrip/">How to get started with FigSTRIP</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/figverb.html">FigVERB</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<script src="/chat.js" defer></script>
+<script src="/nav.js" defer></script>
+</body>
+</html>

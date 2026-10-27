@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started with FigAMP: Amp, Level, Presets</title>
+<meta name="description" content="A step-by-step first session with FigAMP: set the INPUT level, pick an amp and press Classic Tone, shape the sound, set the output and save your own presets.">
+<link rel="canonical" href="https://figproaudio.com/guides/getting-started-with-figamp/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/chat.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get Started with FigAMP: Amp, Level, Presets">
+<meta property="og:description" content="A step-by-step first session with FigAMP: set the INPUT level, pick an amp and press Classic Tone, shape the sound, set the output and save your own presets.">
+<meta property="og:url" content="https://figproaudio.com/guides/getting-started-with-figamp/">
+<meta property="og:image" content="https://figproaudio.com/img/figamp-1.4.0.jpg">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt=""><span>Fig Pro Audio</span></a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<div class="menu">
+  <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+  <div class="menu-list" id="plugins-menu">
+    <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+    <a href="/figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+    <a href="/figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+    <a href="/figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+  </div>
+</div>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to get started with FigAMP</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP</em></p>
+<p>FigAMP is built so you can pick an amp, press one button and play. This guide walks through a first session in order: getting your level right, choosing an amp, shaping the sound, and saving it so you can get it back. It takes about fifteen minutes, and everything here works the same in the plugin and the standalone app.</p>
+<h2>Install it and open it</h2>
+<p>Download the <a href="https://aldana-consulting-llc.moonbase.sh/download/figamp">free 14-day trial</a>, which has every feature working. Run the installer, then restart your DAW and let it rescan plugins if it asks. On a Mac, LUNA and Logic use the Audio Unit version and most other DAWs use VST3; on Windows it's VST3. The <a href="/support.html">Support page</a> has the details for each system.</p>
+<p>Put FigAMP on a mono audio track with your guitar's DI signal coming in. If you just want to play without a DAW, open the standalone app, choose your audio interface and the input your guitar is plugged into in its audio settings, and on a Mac allow microphone access in <em>System Settings › Privacy &amp; Security › Microphone</em>.</p>
+<h2>Set the INPUT level first</h2>
+<p>This is the step people skip, and it changes everything after it. Your audio interface decides how loud your guitar arrives, and every amp and preset in FigAMP is designed to be hit at a certain level. The <strong>INPUT</strong> knob matches the two.</p>
+<ol>
+<li>Play the hardest you'll play in the song: big open chords, digging in.</li>
+<li>Turn INPUT until the light next to it stays green with the odd amber flash.</li>
+<li>If it shows red, the input is clipping. Turn it down.</li>
+</ol>
+<p>INPUT is saved with your session, not with presets, so once it's set, every preset you try hits the amp the way it was meant to. If the signal from your interface is noisy or clipping before it even reaches FigAMP, fix that first with our <a href="/guides/clean-di-guitar-signal/">clean DI guide</a>.</p>
+<h2>Pick an amp and press Classic Tone</h2>
+<p>FigAMP has eight amps, each with its own faceplate and knobs so you always know which one you're playing:</p>
+<ul>
+<li><strong>Singer:</strong> huge clean headroom that blooms into a smooth, vocal overdrive.</li>
+<li><strong>Brit 45:</strong> warm, woolly British crunch.</li>
+<li><strong>Chime 30:</strong> jangling cleans and raw, chiming class-A grind.</li>
+<li><strong>Black Panel:</strong> glassy American cleans with late, sweet breakup.</li>
+<li><strong>Hot 20:</strong> tight, modded British crunch and singing lead.</li>
+<li><strong>Liquid 100:</strong> thick, liquid high-gain lead.</li>
+<li><strong>Cali V:</strong> tight, focused lead with the "V" graphic EQ.</li>
+<li><strong>Steel 50:</strong> tight, aggressive modern high gain.</li>
+</ul>
+<p>Choose the one closest to the style of the song, then press its <strong>Classic Tone</strong> button. That loads the amp's sweet spot with a matched cabinet. It's the fastest way to hear what each amp is about, and because the amps are level-matched, flicking between them won't fool you with a volume jump.</p>
+<p>If you'd rather start from a finished sound, open the <strong>Preset menu</strong>. There are 34 factory presets grouped by amp, including a bass preset for every amp.</p>
+<h2>Play it, then adjust</h2>
+<p>The amps respond to how hard you play. Dig in and they bloom and squish, roll your guitar's volume back and they clean up. Before you reach for a knob, try changing your picking and guitar volume; a lot of tone lives in your hands.</p>
+<p>When you do adjust, a few habits help:</p>
+<ul>
+<li><strong>Gain a little lower than feels perfect.</strong> It almost always sounds heavier once the band is playing. Our guide to <a href="/guides/amp-sim-tone-for-the-mix/">dialling an amp sim for the mix</a> explains why.</li>
+<li><strong>Try the console preamps.</strong> Brit 73, NY 312, Brit 4K and London A sit in front of the amp and each colour the guitar differently before it hits the gain stages.</li>
+<li><strong>Use the compressor pedal for even picking.</strong> Switch it on, raise Sustain for longer notes, and use Level to set how hard it hits the amp (5 is about unity). Factory presets leave it off.</li>
+<li><strong>Move the mic, or load your own cab.</strong> The cabinet section has six matched guitar cabinets, two bass cabinets and a mic position control. Click <strong>Load IR…</strong> to use your own impulse response .wav file.</li>
+<li><strong>Turn on the noise gate for high gain</strong> so the gaps between phrases stay quiet.</li>
+</ul>
+<h2>Add space, then decide on width</h2>
+<p>FigAMP has a tempo-synced <strong>Delay</strong> with warm, darkening repeats and ping-pong, a <strong>Room</strong> that goes from a small studio to a big hall, and <strong>Stereo Shift</strong>, a detune doubler for wide rhythm parts. They sound lovely on their own; in a full song, use less than you think.</p>
+<p>The <strong>STEREO/MONO</strong> switch sets the width for the track. For a main rhythm part, a mono track recorded twice and panned left and right usually sounds bigger and clearer than one stereo patch. Like INPUT, STEREO/MONO is saved with your session rather than with presets.</p>
+<h2>Set the output with the VU meter</h2>
+<p>The needle VU meter shows the level leaving FigAMP. Aim for around 0 VU on normal playing and use the <strong>OUTPUT</strong> knob to get there. That leaves your DAW's fader near where it started and gives any plugins after FigAMP a sensible level to work with.</p>
+<h2>Save your sound</h2>
+<p>When you've got something you like, open the Preset menu and choose <strong>Save preset…</strong>. Give it a name and it appears under <strong>My presets</strong>, in the plugin and the standalone app alike. Presets are small files you can back up or copy to another computer; the <a href="/support.html">Support page</a> lists where they live on Mac and Windows.</p>
+<h2>Playing bass through FigAMP</h2>
+<p>Turn on <strong>Bass Mode</strong> (next to the Bright switch) so a bass guitar's deepest notes get through every amp and cabinet, pick the 4x10 or 1x15 bass cabinet, and turn up <strong>Blend</strong> to mix your clean DI back in under the amp. Around 40 to 60% is a good start. FigAMP lines the two up in time and polarity for you. Every amp has a bass preset to start from, and the <a href="/guides/record-bass-di-and-amp-at-home/">bass DI and amp guide</a> goes further.</p>
+<h2>Where to go next</h2>
+<p>FigAMP works well with the other Fig plugins: <a href="/guides/getting-started-with-figguteq/">FigGutEQ</a> in front of it or after it to shape the guitar, and <a href="/guides/getting-started-with-figverb/">FigVERB</a> after it for a real hall, plate or chamber behind your amp. One Fig Pro Audio account activates them all. When you're ready to keep FigAMP, click <strong>Buy / Activate</strong> in the top right of the plugin, or <a href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">buy it here</a>.</p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/clean-di-guitar-signal/">How to record a clean DI guitar signal</a> · <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a> · <a href="/guides/getting-started-with-figguteq/">How to get started with FigGutEQ</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/figverb.html">FigVERB</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<script src="/chat.js" defer></script>
+<script src="/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started with FigSTRIP: A Channel Strip Workflow</title>
+<meta name="description" content="How to use FigSTRIP: Channel or Bus mode, presets, the six sections and an order to work in, plus Auto Gain, Mix and Zero Latency for tracking.">
+<link rel="canonical" href="https://figproaudio.com/guides/getting-started-with-figstrip/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/chat.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get Started with FigSTRIP: A Channel Strip Workflow">
+<meta property="og:description" content="How to use FigSTRIP: Channel or Bus mode, presets, the six sections and an order to work in, plus Auto Gain, Mix and Zero Latency for tracking.">
+<meta property="og:url" content="https://figproaudio.com/guides/getting-started-with-figstrip/">
+<meta property="og:image" content="https://figproaudio.com/img/figstrip-channel-1.0.2.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt=""><span>Fig Pro Audio</span></a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<div class="menu">
+  <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+  <div class="menu-list" id="plugins-menu">
+    <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+    <a href="/figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+    <a href="/figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+    <a href="/figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+  </div>
+</div>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to get started with FigSTRIP</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigSTRIP</em></p>
+<p>FigSTRIP puts a whole recording chain on one track: a preamp, filters, a compressor and gate, two EQs and a tape stage. That's a lot of controls in one window, so this guide gives you an order to work in. Start from a preset, set the filters, control the dynamics, shape the tone, then add colour and set the level.</p>
+<h2>Install it and pick Channel or Bus</h2>
+<p>Download the <a href="https://aldana-consulting-llc.moonbase.sh/download/figstrip">free 14-day trial</a>, which has every feature working, run the installer and restart your DAW. One licence covers Mac and Windows.</p>
+<p>FigSTRIP has two modes, switched with one control:</p>
+<ul>
+<li><strong>Channel</strong> is the full strip for a single track: vocal, guitar, kick, snare and so on.</li>
+<li><strong>Bus</strong> swaps in a glue compressor built for mix buses, drum buses, stems and groups.</li>
+</ul>
+<p>Switching to Bus links the stereo channels and sets the rest of the strip up for a bus, but only on sections you haven't touched. It's one undo step, and it crossfades, so you can switch while the song plays.</p>
+<h2>Start from a preset</h2>
+<p>There are 32 factory presets for vocals, drums, bass, guitar, keys and buses. Pick the one closest to your track, then adjust. You can save your own presets into folders, and <strong>A/B</strong> plus <strong>undo and redo</strong> mean you can always try an idea and get back to where you were.</p>
+<h2>Understand the six sections</h2>
+<p>Every section has its own <strong>IN</strong> switch, and you can drag them into any order. If you only want to change one thing, flip Dynamics before or after the EQ with a single switch.</p>
+<ul>
+<li><strong>Preamp:</strong> Gain in 5 dB steps or continuous, and Drive for rich, mostly even harmonics, with a transformer that saturates the low end first. Drive is level matched, so more character never just means louder.</li>
+<li><strong>Filters:</strong> an 18 dB per octave high-pass and a 12 dB per octave low-pass. They can also feed the compressor's sidechain.</li>
+<li><strong>Dynamics:</strong> a compressor with soft knee, RMS or peak detection, fast attack, auto release and auto make-up, plus a gate that turns into a gentle expander.</li>
+<li><strong>Color EQ:</strong> broad, forgiving bands on hand-picked frequency steps. A Fine mode frees every frequency.</li>
+<li><strong>G EQ:</strong> four fully parametric bands for precise work.</li>
+<li><strong>Tape:</strong> drive, saturation, a Warmth control that smooths only the top end, an output transformer and a clip that never lets a peak past -0.3 dBFS.</li>
+</ul>
+<h2>Work in this order</h2>
+<ol>
+<li><strong>Clean up with the Filters.</strong> Raise the high-pass until the track stops sounding muddy with the rest of the song playing, but before it sounds thin. Bring the low-pass down only if the top is harsh or noisy.</li>
+<li><strong>Control the level with Dynamics.</strong> Set the compressor so the gain-reduction needle moves on the loud parts and rests on the quiet ones. The transfer curve shows where your signal sits against the threshold. Use the gate or expander only if there's bleed or noise between phrases.</li>
+<li><strong>Shape broadly with Color EQ.</strong> Its wide bands are made for quick, musical moves: a little more body, a little more top.</li>
+<li><strong>Fix precisely with G EQ.</strong> Use a narrow band for one resonance or a clash with another instrument. Small cuts usually beat big boosts.</li>
+<li><strong>Add colour with Preamp and Tape.</strong> Drive in the Preamp thickens, Tape glues and rounds off transients. Switch each one in and out to check it's actually helping.</li>
+</ol>
+<p>This is a starting order, not a rule. If you want the compressor to react to the EQ'd sound, or the tape to sit before the EQ, drag the sections around.</p>
+<h2>Set the output and check the level</h2>
+<p>The Output section has a fader, pan, polarity, and <strong>Mix</strong> for parallel processing. Turn on <strong>Auto Gain</strong> while you work: it keeps the processed sound at the level you started with, so you hear the tone, not the loudness. Watch the peak meters, and the correlation meter on stereo tracks.</p>
+<h2>Using Bus mode</h2>
+<p>On a drum bus, a group or the mix bus, switch to Bus. The glue compressor has threshold, stepped attack and release with a two-stage Auto release, 2, 4 and 10 to 1 ratios, make-up, a sidechain high-pass and Mix for parallel compression. For gentle glue, a low ratio and only a little gain reduction on the loudest parts is a sensible start. The big meter switches to gain reduction in this mode so you can see it.</p>
+<h2>Tracking and CPU</h2>
+<p>FigSTRIP runs 2x or 4x oversampling for the cleanest Preamp and Tape, or a <strong>Zero Latency</strong> mode for when you're recording through it. It handles mono, stereo and mono-to-stereo, with Linked, Dual Mono and Left/Right Independent stereo modes, and an external sidechain.</p>
+<h2>Where to go next</h2>
+<p>The same Fig Pro Audio account that runs <a href="/guides/getting-started-with-figamp/">FigAMP</a> and <a href="/guides/getting-started-with-figguteq/">FigGutEQ</a> activates FigSTRIP. When you're ready to keep it, click <strong>Buy / Activate</strong> in the plugin, or <a href="https://aldana-consulting-llc.moonbase.sh/buy/figstrip">buy FigSTRIP here</a>.</p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a> · <a href="/guides/record-bass-di-and-amp-at-home/">How to record bass DI plus amp tone at home</a> · <a href="/guides/getting-started-with-figverb/">How to get started with FigVERB</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/figverb.html">FigVERB</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<script src="/chat.js" defer></script>
+<script src="/nav.js" defer></script>
+</body>
+</html>

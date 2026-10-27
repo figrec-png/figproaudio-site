@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started with FigGutEQ: Guitar EQ in Two Clicks</title>
+<meta name="description" content="How to use FigGutEQ: where to put it before or after the amp, Tuning Lock, PRE AMP and POST AMP presets, the eight guitar bands and Pick Attack.">
+<link rel="canonical" href="https://figproaudio.com/guides/getting-started-with-figguteq/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/chat.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get Started with FigGutEQ: Guitar EQ in Two Clicks">
+<meta property="og:description" content="How to use FigGutEQ: where to put it before or after the amp, Tuning Lock, PRE AMP and POST AMP presets, the eight guitar bands and Pick Attack.">
+<meta property="og:url" content="https://figproaudio.com/guides/getting-started-with-figguteq/">
+<meta property="og:image" content="https://figproaudio.com/img/figguteq-1.0.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt=""><span>Fig Pro Audio</span></a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<div class="menu">
+  <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+  <div class="menu-list" id="plugins-menu">
+    <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+    <a href="/figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+    <a href="/figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+    <a href="/figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+  </div>
+</div>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to get started with FigGutEQ</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP and FigGutEQ</em></p>
+<p>Most EQs make you hunt for frequencies. FigGutEQ is an eight-band EQ made only for guitar, and each band is named for the part of a guitar sound it shapes, so "take out some mud" is one knob. This guide covers where to put it, how to start from a preset, and how to use the two features no general-purpose EQ has: Pick Attack and Tuning Lock.</p>
+<h2>Install it and put it in the right place</h2>
+<p>Download the <a href="https://aldana-consulting-llc.moonbase.sh/download/figguteq">free 14-day trial</a>, which has every feature working, run the installer, and restart your DAW. It comes as an Audio Unit, VST3 and standalone app on Mac, and VST3 and standalone on Windows.</p>
+<p>Where you put FigGutEQ depends on what you want it to do:</p>
+<ul>
+<li><strong>Before the amp</strong> (in front of FigAMP or any amp plugin): it shapes what the amp hears. Tightening the low end and the pick attack here changes how the amp distorts.</li>
+<li><strong>After the amp</strong>: it shapes what the mix hears. This is where you tame fizz and make room for other instruments.</li>
+</ul>
+<p>Both are useful, and on a heavy guitar it's common to use one of each.</p>
+<h2>Tell it your tuning</h2>
+<p>Do this first. Open <strong>Tuning Lock</strong> and choose your tuning, from Standard E and Drop D down to 7-string Drop A and 8-string F#. FigGutEQ marks your open strings on the graph and moves the Low Cut, the Bottom band and the presets down with your lowest string, so you don't cut the notes you're actually playing.</p>
+<h2>Start from a preset, PRE AMP or POST AMP</h2>
+<p>FigGutEQ has 18 presets, and each is voiced twice: a <strong>PRE AMP</strong> version for in front of the amp and a <strong>POST AMP</strong> version for the mix. One switch flips the whole set, so set it to match where the plugin sits, then pick a preset:</p>
+<ul>
+<li><strong>Clean up:</strong> Tight Low End, Mud Cut, Fizz Tamer, Bass &amp; Boom Control.</li>
+<li><strong>Rock and metal:</strong> Scooped Metal, Djent Tight, Classic Rock Crunch, Doom &amp; Stoner.</li>
+<li><strong>Cut through:</strong> Mid Push, Presence Lift, Lead Cut-Through, Rhythm Glue.</li>
+<li><strong>Clean and roots:</strong> Clean Sparkle, Blues Warmth, Funk Clean, Country Twang.</li>
+<li><strong>Character:</strong> Vintage Radio, Acoustic Strum.</li>
+</ul>
+<p>Then move a band if you like. A preset is a starting point, not a finished answer.</p>
+<h2>Know the eight bands</h2>
+<p>Each band shows its frequency and the matching note name, so you can shape by the note you hear. The defaults are:</p>
+<ol>
+<li><strong>Low Cut (80 Hz):</strong> clears everything below your lowest string. 24 dB per octave, and it follows your tuning.</li>
+<li><strong>Bottom (100 Hz):</strong> weight and thump, the low strings and palm mutes.</li>
+<li><strong>Mud (300 Hz):</strong> the boxy, woolly range that piles up when guitars stack.</li>
+<li><strong>Mids (600 Hz):</strong> body and honk. Scoop it for metal, push it for blues.</li>
+<li><strong>Bite (2 kHz):</strong> pick attack and edge, where a riff gets aggressive.</li>
+<li><strong>Presence (4 kHz):</strong> cut-through in a mix without turning up.</li>
+<li><strong>Air (8 kHz):</strong> sparkle and sheen for cleans and acoustics.</li>
+<li><strong>High Cut (11 kHz):</strong> fizz gone. 24 dB per octave, with the speaker roll-off marked on the graph.</li>
+</ol>
+<p>A good habit: make each move with the rest of the song playing, and keep cuts and boosts small. Our guide to <a href="/guides/amp-sim-tone-for-the-mix/">dialling an amp sim for the mix</a> has a simple routine for the low cut, high cut and a mid cut for the vocal.</p>
+<h2>Use Pick Attack for the transient</h2>
+<p><strong>Pick Attack</strong> boosts or cuts only at the instant your pick hits the string. Cut it to tame pick click on a bright clean or an acoustic; boost it to add snap to a dull rhythm part. The note that rings after the pick stays the same, which is something a normal EQ band can't do.</p>
+<h2>Watch the analyzer, then trust your ears</h2>
+<p>The real-time <strong>In / Out analyzer</strong> shows your guitar before and after the EQ in two colours, so you can see what each move is doing, not just the curve. Use it to find a problem, then close your eyes and decide by ear. Compare with the EQ in and out at the same volume, because louder always sounds better.</p>
+<h2>Mono, stereo and latency</h2>
+<p>The <strong>STEREO / MONO</strong> switch and L / R meters make sure a guitar recorded on one side reaches both speakers. FigGutEQ adds no latency at 1x, so it's safe while you're tracking. The optional 2x and 4x oversampling adds under a tenth of a millisecond.</p>
+<h2>Where to go next</h2>
+<p>FigGutEQ was built to sit next to <a href="/guides/getting-started-with-figamp/">FigAMP</a>, and the same Fig Pro Audio account activates both. When you're ready to keep it, click <strong>Buy / Activate</strong> in the plugin, or <a href="https://aldana-consulting-llc.moonbase.sh/buy/figguteq">buy FigGutEQ here</a>.</p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a> · <a href="/guides/getting-started-with-figamp/">How to get started with FigAMP</a> · <a href="/guides/getting-started-with-figverb/">How to get started with FigVERB</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/figverb.html">FigVERB</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>
+</footer>
+<script src="/chat.js" defer></script>
+<script src="/nav.js" defer></script>
+</body>
+</html>
