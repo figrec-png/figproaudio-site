@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Started with FigTECH EQ: The Low-End Trick and More</title>
+<meta name="description" content="How to use FigTECH EQ: where to put it, Link, Dual or Mid-Side, the low boost and atten trick, the high boost and atten, Drive and the analog panel, and the presets.">
+<link rel="canonical" href="https://figproaudio.com/guides/getting-started-with-figtecheq/">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/chat.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get Started with FigTECH EQ: The Low-End Trick and More">
+<meta property="og:description" content="How to use FigTECH EQ: where to put it, Link, Dual or Mid-Side, the low boost and atten trick, the high boost and atten, Drive and the analog panel, and the presets.">
+<meta property="og:url" content="https://figproaudio.com/guides/getting-started-with-figtecheq/">
+<meta property="og:image" content="https://figproaudio.com/img/figtecheq-1.0.0.png">
+<style>
+/* Guide-page extras, prefixed .fpa- so nothing else on the site shifts. */
+.fpa-guide .fpa-byline { margin: 0 0 28px; }
+.fpa-guide ul, .fpa-guide ol { padding-left: 22px; }
+.fpa-guide li { margin: 4px 0; }
+.fpa-guide strong { color: var(--text); }
+.fpa-guide .fpa-related { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.fpa-guides-list .card h2 { font-size: 20px; margin: 0 0 6px; }
+.fpa-guides-list .card h2 a { color: var(--text); text-decoration: none; }
+.fpa-guides-list .card h2 a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="/"><img src="/img/logo.png" alt=""><span>Fig Pro Audio</span></a>
+<nav>
+<a href="/why.html">Why FigAMP</a>
+<a href="/#amps">Amps</a>
+<a href="/#features">Features</a>
+<div class="menu">
+  <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="plugins-menu">Plugins</button>
+  <div class="menu-list" id="plugins-menu">
+    <a href="/"><strong>FigAMP</strong><span>Guitar amp plugin</span></a>
+    <a href="/figguteq.html"><strong>FigGutEQ</strong><span>Guitar EQ</span></a>
+    <a href="/figstrip.html"><strong>FigSTRIP</strong><span>Channel strip</span></a>
+    <a href="/figtecheq.html"><strong>FigTECH EQ</strong><span>Tube program EQ</span></a>
+    <a href="/figverb.html"><strong>FigVERB</strong><span>Free guitar reverb</span></a>
+  </div>
+</div>
+<a href="/guides/">Guides</a>
+<a href="/support.html">Support</a>
+<a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP</a>
+</nav>
+</div>
+</header>
+<main class="wrap page">
+<article class="fpa-guide">
+<h1>How to get started with FigTECH EQ</h1>
+<p class="fpa-byline"><em>By Al Figlioli, developer of FigAMP and FigTECH EQ</em></p>
+<p>FigTECH EQ is a stereo program equalizer inspired by classic 1960s passive tube program EQs. It doesn't have many controls, and that's the point: a few broad, musical moves, then tubes and transformers to round them off. This guide covers where to put it, how to set up the pair of units, the low-end trick these equalizers are famous for, and the analog panel.</p>
+<h2>Install it and put it in the right place</h2>
+<p>Download the <a href="https://aldana-consulting-llc.moonbase.sh/download/figtecheq">free 14-day trial</a>, which has every feature working, run the installer, and restart your DAW. On Mac it comes as an Audio Unit, VST3, CLAP and standalone app; on Windows as VST3, CLAP and standalone.</p>
+<p>FigTECH EQ is a tone shaper, not a surgical fixer. Put it where you want broad colour:</p>
+<ul>
+<li><strong>On a single track</strong> such as kick, bass, vocal or a guitar bus, after any corrective EQ.</li>
+<li><strong>On the mix bus or master</strong>, for gentle weight and air across the whole mix.</li>
+</ul>
+<h2>Choose Link, Dual or Mid-Side</h2>
+<p>Two complete units share one window, and every control exists twice. The keys on the brand plate decide how the pair is used:</p>
+<ul>
+<li><strong>LINK:</strong> one set of controls for both channels. Each channel still has its own circuit, so the two sides saturate on their own, like two hardware units. Start here.</li>
+<li><strong>DUAL:</strong> unit A on the left and unit B on the right, each with its own settings. Good for doubled guitars, stereo pairs or fixing a lopsided mix.</li>
+<li><strong>M-S:</strong> unit A on the mid and unit B on the side. Add weight to the centre and air to the edges of a master.</li>
+</ul>
+<p>COPY L&gt;R and COPY R&gt;L copy one unit's settings to the other. On a mono track FigTECH EQ runs as one unit.</p>
+<h2>Start from a preset</h2>
+<p>There are 15 factory presets for drums, bass, vocals, guitars, the mix bus and mastering, from Kick Weight to M/S Master Air. Pick the one closest to your source, then adjust. Save your own presets in folders, and use A/B to compare two settings, each keeping its own edits.</p>
+<h2>Use the low-end trick</h2>
+<p>Pick a frequency with <strong>CPS</strong>: 20, 30, 60 or 100 Hz. <strong>LOW BOOST</strong> lifts a broad shelf by up to +14 dB and <strong>LOW ATTEN</strong> cuts by up to 19 dB.</p>
+<p>On most equalizers, boosting and cutting the same frequency cancel out. Here they don't, because the LOW ATTEN shelf turns over higher than the LOW BOOST shelf. Turn both up at the same CPS and the deep lows get bigger while the boxy low mids clear out. At 60 Hz with both at 5, that's about +7.6 dB of lows and -4.3 dB around 1 kHz.</p>
+<p>Try it on a kick drum or bass: set CPS to 60 Hz, bring LOW BOOST up until the bottom feels right, then add LOW ATTEN until the box goes away.</p>
+<h2>Add air with the high boost, tame fizz with the high atten</h2>
+<ul>
+<li><strong>High boost:</strong> a bell at 3, 4, 5, 8, 10, 12 or 16 kHz, set with KCS, with <strong>BANDWIDTH</strong> from sharp to broad. A broad setting gives a gentle, silky lift; a sharp one is more pointed.</li>
+<li><strong>High atten:</strong> a separate shelf that rolls off the top from 5, 10 or 20 kHz, set with ATTEN SEL. It's its own circuit, so you can lift the air and tame the fizz at the same time.</li>
+</ul>
+<p>Hover over any dial to see its setting and what it does in dB.</p>
+<h2>Set the level and compare fairly</h2>
+<p>Boosts make things louder, and louder always sounds better. Use <strong>OUTPUT</strong> (off to +12 dB) and the VU meters, where 0 VU is -18 dBFS, to match the level, then flip <strong>EQ IN/OUT</strong> to hear the difference. EQ OUT takes the equalizer out but leaves the tubes and transformers in circuit, as on the hardware. <strong>POWER</strong> off is a true bypass. With every boost and cut at 0, the level through the unit doesn't change.</p>
+<h2>Open the analog panel</h2>
+<p>Click <strong>ANALOG PANEL</strong> for the response curve and the controls the original panel never had:</p>
+<ul>
+<li><strong>INPUT and DRIVE:</strong> DRIVE sets how hard the tubes and transformers work and scales the output back by the same amount, so it changes the colour, not the level. The tubes add mostly second harmonic and the transformers thicken the lows.</li>
+<li><strong>MIX and WIDTH:</strong> MIX blends in the dry signal, kept in time and in phase. WIDTH runs from mono to twice the side signal.</li>
+<li><strong>PAIR VARIANCE and HUM &amp; NOISE:</strong> small differences between the two channels like two real units, and the hardware's faint mains hum and hiss at 50 or 60 Hz, if you want them.</li>
+<li><strong>Oversampling:</strong> off, 2x, 4x or 8x while playing, with minimum or linear phase filters, and its own setting for offline bounces.</li>
+</ul>
+<h2>Where to go next</h2>
+<p>The same Fig Pro Audio account activates FigTECH EQ, FigAMP, FigGutEQ and FigSTRIP. When you're ready to keep it, click <strong>TRIAL</strong> in the top bar or use the gear menu, or <a href="https://aldana-consulting-llc.moonbase.sh/buy/figtecheq">buy FigTECH EQ here</a>. See the <a href="/figtecheq.html">FigTECH EQ page</a> for the full feature list.</p>
+<p class="fpa-related"><strong>Related guides:</strong> <a href="/guides/getting-started-with-figstrip/">How to get started with FigSTRIP</a> · <a href="/guides/getting-started-with-figguteq/">How to get started with FigGutEQ</a> · <a href="/guides/amp-sim-tone-for-the-mix/">How to dial an amp sim for the mix, not for solo</a></p>
+</article>
+</main>
+<footer>
+<div class="wrap">
+<div>© 2026 Fig Pro Audio · Aldana Consulting LLC</div>
+<div><a href="/why.html">Why FigAMP</a> · <a href="/figguteq.html">FigGutEQ</a> · <a href="/figstrip.html">FigSTRIP</a> · <a href="/figtecheq.html">FigTECH EQ</a> · <a href="/figverb.html">FigVERB</a> · <a href="/guides/">Guides</a> · <a href="/support.html">Support</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
+</div>
+<div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigTECH EQ is inspired by classic 1960s passive tube program EQs and isn't affiliated with or endorsed by any maker of EQ hardware.</div>
+</footer>
+<script src="/chat.js" defer></script>
+<script src="/nav.js" defer></script>
+</body>
+</html>

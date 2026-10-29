@@ -13,7 +13,7 @@
 ## Pages
 
 - [Why FigAMP](https://figproaudio.com/why.html): how FigAMP compares with all-in-one suites, signature packs and free capture players.
-- [Guides](https://figproaudio.com/guides/): how-to guides for recording a clean DI guitar signal, dialling an amp sim for the mix, and blending bass DI with amp tone.
+- [Guides](https://figproaudio.com/guides/): a getting-started guide for each plugin (FigAMP, FigGutEQ, FigSTRIP, FigTECH EQ, FigVERB), plus how-to guides for recording a clean DI guitar signal, dialling an amp sim for the mix, and blending bass DI with amp tone.
 - [Support](https://figproaudio.com/support.html): installing, activating and common questions for every plugin. Email support@figproaudio.com.
 - [Privacy](https://figproaudio.com/privacy.html) and [Terms](https://figproaudio.com/terms.html).
 
