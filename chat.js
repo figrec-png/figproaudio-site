@@ -8,10 +8,10 @@
   var FAQ = [
     { id: "install-mac", label: "Install on Mac",
       keys: ["install mac", "mac install", "macos", "component", "au ", "audio unit", "copy", "where do i put", "install"],
-      answer: "On a Mac, run the downloaded installer, FigAMP-1.5.1-Mac.pkg. The installer is signed and notarized by Apple, so there are no security warnings; it asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places. Then restart your DAW." },
+      answer: "On a Mac, run the downloaded installer, FigAMP-1.5.2-Mac.pkg. The installer is signed and notarized by Apple, so there are no security warnings; it asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places. Then restart your DAW." },
     { id: "install-win", label: "Install on Windows",
       keys: ["windows", "pc", "vst3 folder", "program files", "exe", "install windows"],
-      answer: "On Windows, run the downloaded installer, FigAMP-1.5.1-Windows-Setup.exe. It installs the VST3 plugin into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime download is needed. Then restart your DAW and rescan plugins if it asks." },
+      answer: "On Windows, run the downloaded installer, FigAMP-1.5.2-Windows-Setup.exe. It installs the VST3 plugin into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime download is needed. Then restart your DAW and rescan plugins if it asks." },
     { id: "smartscreen", label: "Windows protected your PC",
       keys: ["smartscreen", "protected your pc", "windows protected", "run anyway", "unknown publisher", "blocked"],
       answer: "That blue \"Windows protected your PC\" screen can appear the first time you run the FigAMP setup file or the standalone app, because it is a new publisher to Windows. Click More info, then Run anyway. It never affects the plugin inside your DAW." },
