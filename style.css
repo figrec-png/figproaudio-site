@@ -175,3 +175,24 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 720px; font-s
 .ribbon:hover { background: var(--panel-2); }
 .ribbon .new { margin-left: 0; }
 .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* "What are you working on?" plugin finder band (home page); tiles open the assistant in chat.js */
+.finder { padding: 56px 0 64px; background: linear-gradient(180deg, transparent, rgba(142, 58, 145, 0.10) 40%, transparent); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.finder-head { text-align: center; }
+.finder-head .sub { margin: 0 auto 32px; }
+.finder-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+.finder-tile { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 20px 20px 18px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); color: var(--text); text-decoration: none;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease; }
+.finder-tile:hover, .finder-tile:focus-visible { transform: translateY(-2px); border-color: var(--plum-light); background: var(--panel-2); outline: none; }
+.finder-tile strong { font-size: 19px; letter-spacing: -0.2px; }
+.finder-tile .chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); }
+.finder-tile .chain b { font-weight: 700; color: var(--gold); padding: 3px 9px; border: 1px solid rgba(226, 184, 90, 0.35); border-radius: 999px; }
+.finder-tile .chain i { font-style: normal; color: var(--plum-light); font-weight: 700; }
+.finder-tile .what { color: var(--muted); font-size: 15px; line-height: 1.45; flex: 1; }
+.finder-tile .go { font-size: 14px; font-weight: 700; color: var(--plum-light); }
+.finder-tile .go::after { content: " →"; }
+.finder-free { border-style: dashed; }
+@media (max-width: 900px) { .finder-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .finder-grid { grid-template-columns: 1fr; } .finder-tile { padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { .finder-tile { transition: none; } .finder-tile:hover { transform: none; } }
