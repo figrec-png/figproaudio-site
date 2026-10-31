@@ -196,3 +196,29 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 720px; font-s
 @media (max-width: 900px) { .finder-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .finder-grid { grid-template-columns: 1fr; } .finder-tile { padding: 16px; } }
 @media (prefers-reduced-motion: reduce) { .finder-tile { transition: none; } .finder-tile:hover { transform: none; } }
+
+/* FigAMP amp demos: a "Hear it" player on each amp card, run by audio-demos.js */
+.card.amp { display: flex; flex-direction: column; }
+.card.amp > p { flex: 1; }
+.listen { display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 16px; padding: 8px 14px 8px 8px;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 999px; color: var(--text);
+  font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; text-align: left;
+  transition: border-color .15s ease, background .15s ease; -webkit-tap-highlight-color: transparent; }
+.listen:hover, .listen:focus-visible { border-color: var(--plum-light); outline: none; }
+.listen .ico { flex: none; position: relative; width: 32px; height: 32px; border-radius: 50%; background: var(--gold); }
+.listen .ico::before { content: ""; position: absolute; left: 12px; top: 9px; border-style: solid; border-width: 7px 0 7px 11px;
+  border-color: transparent transparent transparent #1a1408; }
+.listen[data-state="playing"] .ico::before { left: 11px; top: 10px; width: 10px; height: 12px; border: 0;
+  border-left: 3px solid #1a1408; border-right: 3px solid #1a1408; }
+.listen[data-state="loading"] .ico { animation: listen-pulse 1s ease-in-out infinite; }
+@keyframes listen-pulse { 50% { opacity: .55; } }
+.listen .lbl { flex: none; min-width: 52px; }
+.listen .bar { flex: 1; height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+.listen .bar i { display: block; height: 100%; width: 0; background: var(--plum-light); }
+.listen .t { flex: none; color: var(--muted); font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.listen-dry { width: auto; max-width: 360px; margin: 0 0 24px; }
+.listen-dry .ico { background: var(--line); }
+.listen-dry .ico::before { border-color: transparent transparent transparent var(--text); }
+.listen-dry[data-state="playing"] .ico::before { border-left-color: var(--text); border-right-color: var(--text); }
+.demo-note { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
+@media (prefers-reduced-motion: reduce) { .listen[data-state="loading"] .ico { animation: none; } }
