@@ -16,8 +16,8 @@
       name: "FigAMP", role: "Guitar amp", page: "./", img: "img/figamp-1.4.0.jpg",
       price: 49, msrp: 99, priceNote: "On sale", mac: true, win: true,
       line: "Eight touch-sensitive classic amps, guitar and bass cabinets, compressor, delay and room in one window.",
-      install: { mac: "run the installer, FigAMP-1.5.2-Mac.pkg. It's signed and notarized by Apple, asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places.",
-        win: "run FigAMP-1.5.2-Windows-Setup.exe. It installs the VST3 into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime is needed." },
+      install: { mac: "run the installer, FigAMP-1.5.3-Mac.pkg. It's signed and notarized by Apple, asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places.",
+        win: "run FigAMP-1.5.3-Windows-Setup.exe. It installs the VST3 into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime is needed." },
       activate: "click Buy / Activate in the top right of FigAMP",
       formats: "Mac: macOS 11 or later, Apple Silicon or Intel, Audio Unit, VST3 and standalone. Windows: 10 or 11, 64-bit, VST3 and standalone."
     },
