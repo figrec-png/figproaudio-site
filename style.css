@@ -222,3 +222,5 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 720px; font-s
 .listen-dry[data-state="playing"] .ico::before { border-left-color: var(--text); border-right-color: var(--text); }
 .demo-note { color: var(--muted); font-size: 13px; margin: 18px 0 0; }
 @media (prefers-reduced-motion: reduce) { .listen[data-state="loading"] .ico { animation: none; } }
+.listen-alt { margin-top: 8px; }
+.listen .lbl { white-space: nowrap; }
