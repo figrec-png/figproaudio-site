@@ -18,8 +18,8 @@
   ];
   var RIFFS = {
     clean: {
-      label: "Clean riff", amp: "Black Panel", dir: "/audio/chain/clean/",
-      presets: { gut: "Clean Sparkle", amp: "Black Panel, Classic Clean", strip: "Electric Track", tech: "Stereo Gtr Spread", verb: "Clean Chamber" }
+      label: "Clean riff", amp: "Singer", dir: "/audio/chain/clean/",
+      presets: { gut: "Clean Sparkle", amp: "Singer, Classic Singer, Gain 4", strip: "Electric Track", tech: "Stereo Gtr Spread", verb: "Clean Chamber" }
     },
     heavy: {
       label: "Heavy riff", amp: "Steel 50", dir: "/audio/chain/heavy/",
@@ -165,8 +165,8 @@
     this.get = el("div", "rig-get");
     root.appendChild(this.get);
     root.appendChild(el("p", "rig-note",
-      "Every clip is Fig Audio's own DI riff run through the plugins themselves, one factory preset each, " +
-      "level-matched so you hear tone, not volume. FigAMP's own delay and room are off here so FigVERB is the only space. " +
+      "Every clip is Fig Audio's own DI riff run through the plugins themselves, one factory preset each " +
+      "(on the clean riff, FigAMP's Classic Singer has its Gain at 4 for a touch of breakup), level-matched so you hear tone, not volume. FigAMP's own delay and room are off here so FigVERB is the only space. " +
       "With FigAMP off you hear the dry DI."));
 
     this.render();
