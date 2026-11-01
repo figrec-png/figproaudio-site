@@ -152,7 +152,7 @@
       cards: function () { return ["figamp"]; } },
     { id: "demos", label: "Hear FigAMP's amps",
       keys: ["hear", "listen", "demo", "audio", "sound like", "sample", "clip", "example"],
-      answer: function () { return "Every amp has a Hear it button on the FigAMP page, under Eight amps, one sweet spot each. They all play the same dry guitar riff through that amp's Classic Tone, level-matched, and switching amps mid-riff keeps your place. There's a Dry DI button too, so you can hear the guitar before the amp. The free 14-day trial lets you try them on your own playing."; },
+      answer: function () { return "Every amp has a Hear it button on the FigAMP page, under Eight amps, one sweet spot each. Each plays a dry guitar riff through that amp's Classic Tone, level-matched: the clean amps share a Tele-style riff and the gain amps share a heavier one, and switching amps on the same riff keeps your place. Dry DI buttons let you hear both riffs before the amp. The free 14-day trial lets you try them on your own playing."; },
       cards: function () { return ["figamp"]; } },
     { id: "bass", label: "Using FigAMP for bass",
       keys: ["bass", "bass guitar", "bass mode", "blend", "4x10", "1x15", "low end", "low b"],

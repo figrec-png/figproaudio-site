@@ -224,3 +224,5 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 720px; font-s
 @media (prefers-reduced-motion: reduce) { .listen[data-state="loading"] .ico { animation: none; } }
 .listen-alt { margin-top: 8px; }
 .listen .lbl { white-space: nowrap; }
+.dry-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
+.dry-row .listen-dry { margin: 0; flex: 1 1 240px; }
