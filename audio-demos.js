@@ -59,6 +59,15 @@
     });
   });
 
+  // One sound at a time: tell the other players (the Fig chain) to stop when a demo starts,
+  // and stop the demo when one of them starts.
+  audio.addEventListener("play", function () {
+    document.dispatchEvent(new CustomEvent("figaudio:play", { detail: { source: audio } }));
+  });
+  document.addEventListener("figaudio:play", function (e) {
+    if (e.detail.source !== audio && !audio.paused) audio.pause();
+  });
+
   audio.addEventListener("playing", function () { if (current) setState(current, "playing"); });
   audio.addEventListener("pause", function () { if (current && !audio.ended) setState(current, "paused"); });
   audio.addEventListener("ended", function () { if (current) reset(current); current = null; });

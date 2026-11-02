@@ -280,6 +280,8 @@
     ensureCtx();
     if (active && active !== this) active.pause();
     active = this;
+    // Tell every other player on the page (the amp demos) to stop: one sound at a time.
+    document.dispatchEvent(new CustomEvent("figaudio:play", { detail: { source: this } }));
     this.playing = true;
     this.t0 = ctx.currentTime - this.pausedAt;
     this.root.setAttribute("data-playing", "true");
@@ -333,5 +335,10 @@
     if (this.playing) this.switchTo();
   };
 
-  boards.forEach(function (b) { new Board(b); });
+  var all = boards.map(function (b) { return new Board(b); });
+
+  // Another player on the page started: stop the chain, keeping its place in the riff.
+  document.addEventListener("figaudio:play", function (e) {
+    all.forEach(function (b) { if (b !== e.detail.source && b.playing) b.pause(); });
+  });
 })();
