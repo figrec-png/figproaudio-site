@@ -32,7 +32,7 @@
     },
     figstrip: {
       name: "FigSTRIP", role: "Channel strip", page: "figstrip.html", img: "img/figstrip-channel-1.0.2.png", tall: true,
-      price: 49, msrp: 99, priceNote: "Launch price", mac: true, win: true,
+      price: 39, msrp: 79, priceNote: "Launch price", mac: true, win: true,
       line: "Preamp, filters, dynamics, two EQs and tape in any order on every track, plus a Bus mode with its own glue compressor.",
       install: { mac: "run the FigSTRIP Mac installer (.pkg). It's signed and notarized by Apple, asks for your Mac password and installs the Audio Unit, VST3 and standalone app.",
         win: "run the FigSTRIP Windows setup. It installs FigSTRIP.vst3 into C:\\Program Files\\Common Files\\VST3 and the standalone app, with an uninstaller." },
@@ -41,7 +41,7 @@
     },
     figtecheq: {
       name: "FigTECH EQ", role: "Tube program EQ", page: "figtecheq.html", img: "img/figtecheq-1.0.0.png",
-      price: 79, msrp: 129, priceNote: "Introductory price", mac: true, win: true,
+      price: 49, msrp: 99, priceNote: "Introductory price", mac: true, win: true,
       line: "Two 1960s-style passive tube program EQs racked as a pair, in Link, Dual or Mid-Side.",
       install: { mac: "run the FigTECH EQ Mac installer (.pkg). It's signed and notarized by Apple; its Customize page lists the Audio Unit, VST3 and CLAP plugins and the standalone app, all ticked, so untick any you don't want.",
         win: "run the FigTECH EQ Windows setup. It installs the VST3 and CLAP plugins and the standalone app, each optional, with an uninstaller." },

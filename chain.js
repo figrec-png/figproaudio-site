@@ -12,8 +12,8 @@
   var UNITS = [
     { id: "gut", name: "FigGutEQ", role: "Guitar EQ", page: "figguteq.html", slug: "figguteq", price: "$29", was: "$49" },
     { id: "amp", name: "FigAMP", role: "Amp, cab and pedals", page: "/", slug: "figamp", price: "$49", was: "$99" },
-    { id: "strip", name: "FigSTRIP", role: "Channel strip", page: "figstrip.html", slug: "figstrip", price: "$49", was: "$99" },
-    { id: "tech", name: "FigTECH EQ", role: "Tube program EQ", page: "figtecheq.html", slug: "figtecheq", price: "$79", was: "$129" },
+    { id: "strip", name: "FigSTRIP", role: "Channel strip", page: "figstrip.html", slug: "figstrip", price: "$39", was: "$79" },
+    { id: "tech", name: "FigTECH EQ", role: "Tube program EQ", page: "figtecheq.html", slug: "figtecheq", price: "$49", was: "$99" },
     { id: "verb", name: "FigVERB", role: "Guitar reverb", page: "figverb.html", slug: "figverb", price: "Free", free: true }
   ];
   var RIFFS = {
