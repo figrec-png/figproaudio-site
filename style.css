@@ -59,7 +59,9 @@ nav a:hover { color: var(--text); }
 .menu-list::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
 .menu[data-open] .menu-list { display: block; }
 @media (hover: hover) { .menu:hover .menu-list { display: block; } }
-nav .menu-list a { display: block; padding: 8px 12px; border-radius: 8px; line-height: 1.35; }
+nav .menu-list a { display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; align-items: center; padding: 8px 12px; border-radius: 8px; line-height: 1.35; }
+.menu-list a img { grid-row: 1 / span 2; width: 34px; height: 34px; }
+.menu-list a strong, .menu-list a span { grid-column: 2; }
 nav .menu-list a:hover, nav .menu-list a:focus-visible { background: var(--panel-2); outline: none; }
 .menu-list strong { display: block; color: var(--text); font-weight: 600; }
 .menu-list span { display: block; color: var(--muted); font-size: 13px; }
@@ -84,6 +86,18 @@ nav .btn { padding: 8px 16px; font-size: 14px; white-space: nowrap; }
 .hero p.lead { color: var(--muted); font-size: clamp(17px, 2.2vw, 20px); max-width: 680px; margin: 0 auto 28px; }
 .hero .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 .hero .small { color: var(--muted); font-size: 14px; margin-top: 14px; }
+/* each plugin's own logo: above the headline on its page, and in the line-up on the home page */
+.plugin-logo { display: block; width: 132px; height: 132px; margin: 0 auto 20px; filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5)); }
+.plugin-logo-sm { display: block; width: 72px; height: 72px; margin: 0 0 14px; }
+.split img.plugin-logo-sm { border: 0; border-radius: 0; }
+.lineup { padding: 48px 0 56px; text-align: center; }
+.lineup h2 { margin-bottom: 28px; }
+.lineup-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 28px; }
+.lineup-row a { display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--muted); text-decoration: none; font-size: 14px; transition: transform 0.15s ease, color 0.15s ease; }
+.lineup-row a:hover, .lineup-row a:focus-visible { color: var(--text); transform: translateY(-3px); outline: none; }
+.lineup-row img { width: 150px; height: 150px; }
+@media (max-width: 800px) { .lineup-row { gap: 14px 16px; } .lineup-row img { width: 96px; height: 96px; } .plugin-logo { width: 104px; height: 104px; } }
+@media (prefers-reduced-motion: reduce) { .lineup-row a { transition: none; } .lineup-row a:hover { transform: none; } }
 .shot { margin: 48px auto 0; max-width: 1000px; border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55); }
 
