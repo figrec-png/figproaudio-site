@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FigAMP guitar amp plugin | Fig Pro Audio</title>
-<meta name="description" content="FigAMP is a guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, compressor, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets. AU, VST3 and standalone. Free 14-day trial.">
+<meta name="description" content="FigAMP is a guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, fuzz, phaser, compressor, chorus, flanger, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets. AU, VST3 and standalone. Free 14-day trial.">
 <link rel="canonical" href="https://figproaudio.com/">
 <link rel="icon" type="image/png" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="chat.css">
 <meta property="og:title" content="FigAMP guitar amp plugin | Fig Pro Audio">
-<meta property="og:description" content="FigAMP is a guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, compressor, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets. AU, VST3 and standalone. Free 14-day trial.">
-<meta property="og:image" content="https://figproaudio.com/img/figamp-1.4.0.jpg">
+<meta property="og:description" content="FigAMP is a guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, fuzz, phaser, compressor, chorus, flanger, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets. AU, VST3 and standalone. Free 14-day trial.">
+<meta property="og:image" content="https://figproaudio.com/img/figamp-2.1.jpg">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -37,13 +37,13 @@
  "@type": "SoftwareApplication",
  "name": "FigAMP",
  "url": "https://figproaudio.com/",
- "description": "Guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, compressor, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets.",
+ "description": "Guitar amp simulator plugin for Mac and Windows: eight touch-sensitive classic amp voices, a Bass Mode with clean Blend, studio console preamps, fuzz, phaser, compressor, chorus, flanger, guitar and bass cabinets, delay and room, an input level control with VU meter, plus your own presets.",
  "applicationCategory": "MultimediaApplication",
  "applicationSubCategory": "Audio plugin (AU, VST3, standalone)",
  "operatingSystem": "macOS 11 or later, Windows 10 or 11",
- "softwareVersion": "1.6.6",
- "image": "https://figproaudio.com/img/figamp-1.4.0.jpg",
- "screenshot": "https://figproaudio.com/img/figamp-1.4.0.jpg",
+ "softwareVersion": "2.1.0",
+ "image": "https://figproaudio.com/img/figamp-2.1.jpg",
+ "screenshot": "https://figproaudio.com/img/figamp-2.1.jpg",
  "offers": {
   "@type": "Offer",
   "price": "49",
@@ -93,7 +93,7 @@
     <a class="ribbon" href="figtecheq.html"><span class="new">New</span> FigTECH EQ, a tube program EQ for your mix →</a>
     <img class="plugin-logo" src="img/logos/figamp-320.webp" srcset="img/logos/figamp-320.webp 1x, img/logos/figamp-640.webp 2x" width="132" height="132" alt="The FigAMP logo">
     <h1>Classic amp tone,<br><span>without the hassle.</span></h1>
-    <p class="lead">FigAMP is a guitar amp plugin built for players, not engineers. Pick an amp, press <strong>Classic Tone</strong>, and play. Eight classic amp voices that respond to your pick like the real thing, studio console preamps, a compressor pedal, matched cabinets, delay and room, all in one window.</p>
+    <p class="lead">FigAMP is a guitar amp plugin built for players, not engineers. Pick an amp, press <strong>Classic Tone</strong>, and play. Eight classic amp voices that respond to your pick like the real thing, studio console preamps, a fuzz, a phaser, a compressor pedal, matched cabinets, chorus, flanger, delay and room, all in one window you can resize to fit your screen.</p>
     <div class="ctas">
       <a class="btn btn-primary" href="https://aldana-consulting-llc.moonbase.sh/buy/figamp">Buy FigAMP · <s class="was">$99</s> $49</a>
       <a class="btn btn-ghost" href="https://aldana-consulting-llc.moonbase.sh/download/figamp">Try it free for 14 days</a>
@@ -101,7 +101,7 @@
     <p class="small">Mac (Apple Silicon and Intel) and Windows · AU, VST3 and standalone app</p>
     <p class="small"><a href="#chain">Hear all five Fig plugins in one playable chain</a></p>
     <p class="small"><a href="#finder" data-fb-intent="menu">Not sure FigAMP is the one? Find the right Fig plugin for your project</a></p>
-    <div class="shot"><img src="img/figamp-1.4.0.jpg" width="1180" height="834" alt="The FigAMP plugin window with amp, cabinet, delay, room, Stereo Shift, preamp, compressor, noise gate and in/out sections with a VU meter"></div>
+    <div class="shot"><img src="img/figamp-2.1.jpg" width="1400" height="834" alt="The FigAMP plugin window: the amp on top, with noise gate, compressor, phaser, preamp, cabinet, FigChorus, Flanger, Stereo Shift, delay, room and in/out sections with a VU meter below"></div>
   </div>
 </section>
 
@@ -185,16 +185,17 @@
     <p class="sub" style="margin-bottom:16px">Hear each one through its Classic Tone preset. Singer, Brit 45, Chime 30 and Black Panel play a dry clean riff, and the gain amps play a heavier riff, so each amp gets a part that suits it. Every clip is the plugin itself, level-matched, and switching between amps on the same riff keeps your place so you only hear the amp change.</p>
     <div class="dry-row"><button type="button" class="listen listen-dry" data-src="audio/figamp/DI.mp3" data-riff="clean" aria-label="Play the dry clean riff, before the amp"><span class="ico" aria-hidden="true"></span><span class="lbl">Dry DI, clean riff</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:42</span></button><button type="button" class="listen listen-dry" data-src="audio/figamp/DI-Heavy.mp3" data-riff="heavy" aria-label="Play the dry heavy riff, before the amp"><span class="ico" aria-hidden="true"></span><span class="lbl">Dry DI, heavy riff</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
     <div class="grid">
-      <div class="card amp"><img class="head" src="img/heads/Singer-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Singer amp head in FigAMP: black tolex, wheat grille cloth, a brushed silver panel and chrome-skirted knobs"><div class="tag">Clean to smooth</div><h3>Singer</h3><p>Huge clean headroom that blooms into a smooth, vocal overdrive.</p><button type="button" class="listen" data-src="audio/figamp/Singer.mp3" data-riff="clean" aria-label="Play the Singer demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/Brit45-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Brit 45 amp head in FigAMP: black tolex with white piping, salt-and-pepper grille cloth, a brushed gold panel and gold-cap knobs"><div class="tag">British crunch</div><h3>Brit 45</h3><p>Warm, woolly crunch from the amp that started British rock.</p><button type="button" class="listen" data-src="audio/figamp/Brit45.mp3" data-riff="clean" aria-label="Play the Brit 45 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/Chime30-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Chime 30 amp head in FigAMP: black tolex with gold piping, brown grille cloth, a copper panel and chicken-head knobs"><div class="tag">Class-A chime</div><h3>Chime 30</h3><p>Jangling cleans and raw, chiming class-A grind.</p><button type="button" class="listen" data-src="audio/figamp/Chime30.mp3" data-riff="clean" aria-label="Play the Chime 30 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/BlackPanel-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Black Panel amp head in FigAMP: black tolex, silver sparkle grille cloth, a black panel and numbered skirted knobs"><div class="tag">American clean</div><h3>Black Panel</h3><p>Glassy cleans, deep lows and late, sweet breakup.</p><button type="button" class="listen" data-src="audio/figamp/BlackPanel.mp3" data-riff="clean" aria-label="Play the Black Panel demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button><button type="button" class="listen listen-alt" data-src="audio/figamp/BlackPanel-Comp.mp3" data-riff="clean" aria-label="Play the Black Panel demo with the compressor pedal on"><span class="ico" aria-hidden="true"></span><span class="lbl">With comp</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/Hot20-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Hot 20 amp head in FigAMP: black tolex, salt-and-pepper grille cloth, a black panel and ribbed knobs"><div class="tag">Hot-rodded</div><h3>Hot 20</h3><p>Tight, modded British crunch and singing lead.</p><button type="button" class="listen" data-src="audio/figamp/Hot20.mp3" data-riff="heavy" aria-label="Play the Hot 20 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/Liquid100-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Liquid 100 amp head in FigAMP: black tolex, black grille cloth and a mirror chrome panel"><div class="tag">High gain</div><h3>Liquid 100</h3><p>Thick, liquid lead tone that sustains for days.</p><button type="button" class="listen" data-src="audio/figamp/Liquid100.mp3" data-riff="heavy" aria-label="Play the Liquid 100 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/CaliV-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Cali V amp head in FigAMP: black tolex, a black metal grille, a black panel and knurled metal knobs"><div class="tag">Focused lead</div><h3>Cali V</h3><p>Tight, focused lead with the famous "V" graphic EQ.</p><button type="button" class="listen" data-src="audio/figamp/CaliV.mp3" data-riff="heavy" aria-label="Play the Cali V demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
-      <div class="card amp"><img class="head" src="img/heads/Steel50-1.4.0.jpg" width="720" height="195" loading="lazy" alt="The Steel 50 amp head in FigAMP: an all-black head with a matte panel and red-pointer knobs"><div class="tag">Modern high gain</div><h3>Steel 50</h3><p>Tight, aggressive modern high gain: thick saturated lows, cutting mids, fast attack. <span class="new">New in 1.3</span></p><button type="button" class="listen" data-src="audio/figamp/Steel50.mp3" data-riff="heavy" aria-label="Play the Steel 50 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Singer-2.1.jpg" width="720" height="165" loading="lazy" alt="The Singer amp head in FigAMP: black tolex, wheat grille cloth, a brushed silver panel and chrome-skirted knobs"><div class="tag">Clean to smooth</div><h3>Singer</h3><p>Huge clean headroom that blooms into a smooth, vocal overdrive.</p><button type="button" class="listen" data-src="audio/figamp/Singer.mp3" data-riff="clean" aria-label="Play the Singer demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Brit45-2.1.jpg" width="720" height="165" loading="lazy" alt="The Brit 45 amp head in FigAMP: black tolex with white piping, salt-and-pepper grille cloth, a brushed gold panel and gold-cap knobs"><div class="tag">British crunch</div><h3>Brit 45</h3><p>Warm, woolly crunch from the amp that started British rock.</p><button type="button" class="listen" data-src="audio/figamp/Brit45.mp3" data-riff="clean" aria-label="Play the Brit 45 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Chime30-2.1.jpg" width="720" height="165" loading="lazy" alt="The Chime 30 amp head in FigAMP: black tolex with gold piping, brown grille cloth, a copper panel and chicken-head knobs"><div class="tag">Class-A chime</div><h3>Chime 30</h3><p>Jangling cleans and raw, chiming class-A grind.</p><button type="button" class="listen" data-src="audio/figamp/Chime30.mp3" data-riff="clean" aria-label="Play the Chime 30 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/BlackPanel-2.1.jpg" width="720" height="165" loading="lazy" alt="The Black Panel amp head in FigAMP: black tolex, silver sparkle grille cloth, a black panel and numbered skirted knobs"><div class="tag">American clean</div><h3>Black Panel</h3><p>Glassy cleans, deep lows and late, sweet breakup.</p><button type="button" class="listen" data-src="audio/figamp/BlackPanel.mp3" data-riff="clean" aria-label="Play the Black Panel demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button><button type="button" class="listen listen-alt" data-src="audio/figamp/BlackPanel-Comp.mp3" data-riff="clean" aria-label="Play the Black Panel demo with the compressor pedal on"><span class="ico" aria-hidden="true"></span><span class="lbl">With comp</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Hot20-2.1.jpg" width="720" height="165" loading="lazy" alt="The Hot 20 amp head in FigAMP: black tolex, salt-and-pepper grille cloth, a black panel and ribbed knobs"><div class="tag">Hot-rodded</div><h3>Hot 20</h3><p>Tight, modded British crunch and singing lead.</p><button type="button" class="listen" data-src="audio/figamp/Hot20.mp3" data-riff="heavy" aria-label="Play the Hot 20 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Liquid100-2.1.jpg" width="720" height="165" loading="lazy" alt="The Liquid 100 amp head in FigAMP: black tolex, black grille cloth and a mirror chrome panel"><div class="tag">High gain</div><h3>Liquid 100</h3><p>Thick, liquid lead tone that sustains for days.</p><button type="button" class="listen" data-src="audio/figamp/Liquid100.mp3" data-riff="heavy" aria-label="Play the Liquid 100 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/CaliV-2.1.jpg" width="720" height="165" loading="lazy" alt="The Cali V amp head in FigAMP: black tolex, a black metal grille, a black panel and knurled metal knobs"><div class="tag">Focused lead</div><h3>Cali V</h3><p>Tight, focused lead with the famous "V" graphic EQ.</p><button type="button" class="listen" data-src="audio/figamp/CaliV.mp3" data-riff="heavy" aria-label="Play the Cali V demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
+      <div class="card amp"><img class="head" src="img/heads/Steel50-2.1.jpg" width="720" height="165" loading="lazy" alt="The Steel 50 amp head in FigAMP: an all-black head with a matte panel and red-pointer knobs"><div class="tag">Modern high gain</div><h3>Steel 50</h3><p>Tight, aggressive modern high gain: thick saturated lows, cutting mids, fast attack. <span class="new">New in 1.3</span></p><button type="button" class="listen" data-src="audio/figamp/Steel50.mp3" data-riff="heavy" aria-label="Play the Steel 50 demo"><span class="ico" aria-hidden="true"></span><span class="lbl">Hear it</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button></div>
     </div>
-    <p class="demo-note">Audio demos: each amp's Classic Tone preset with its matched cabinet, delay and room as saved. Black Panel's second clip adds the compressor pedal (Sustain 5, Level 5). Every riff was recorded by Fig Audio: the clean riff on Singer, Brit 45, Chime 30 and Black Panel, and the heavy riff on Hot 20, Liquid 100, Cali V and Steel 50.</p>
+    <div class="dry-row" style="margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:10px"><button type="button" class="listen listen-dry" data-src="audio/figamp/Hot20-Fuzz.mp3" data-riff="heavy" aria-label="Play the Hot 20 demo with the Fuzz switch on"><span class="ico" aria-hidden="true"></span><span class="lbl">Fuzz on Hot 20</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:28</span></button><button type="button" class="listen listen-dry" data-src="audio/figamp/BlackPanel-Chorus.mp3" data-riff="clean" aria-label="Play the Black Panel demo with FigChorus on"><span class="ico" aria-hidden="true"></span><span class="lbl">FigChorus on Black Panel</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button><button type="button" class="listen listen-dry" data-src="audio/figamp/BlackPanel-Flanger.mp3" data-riff="clean" aria-label="Play the Black Panel demo with the Flanger on"><span class="ico" aria-hidden="true"></span><span class="lbl">Flanger on Black Panel</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button><button type="button" class="listen listen-dry" data-src="audio/figamp/BlackPanel-Phaser.mp3" data-riff="clean" aria-label="Play the Black Panel demo with the Phaser on"><span class="ico" aria-hidden="true"></span><span class="lbl">Phaser on Black Panel</span><span class="bar" aria-hidden="true"><i></i></span><span class="t">0:43</span></button></div>
+    <p class="demo-note">Audio demos: each amp's Classic Tone preset with its matched cabinet, delay and room as saved. Black Panel's second clip adds the compressor pedal (Sustain 5, Level 5). The Fuzz, FigChorus, Flanger and Phaser clips are the same presets with only that effect switched on (the Fuzz clip also sets Gain to 2 and Master to 8). Every riff was recorded by Fig Audio: the clean riff on Singer, Brit 45, Chime 30 and Black Panel, and the heavy riff on Hot 20, Liquid 100, Cali V and Steel 50.</p>
   </div>
 </section>
 
@@ -203,12 +204,16 @@
     <div>
       <h2>A whole studio chain</h2>
       <ul class="ticks">
-        <li><strong>Amps voiced against the real thing.</strong> Singer, Black Panel and Steel 50 are now tuned against captures of real amps of their type, and Brit 45 is rebuilt around the original circuit with the British 25W 4x12. Steel 50 is tighter in the lows, with more pick attack and an open top end. <span class="new">New in 1.6</span></li>
+        <li><strong>Fuzz on every amp.</strong> A switch next to Bass Mode puts a big, sustaining fuzz in front of the amp: a thick, scooped wall of sound. For a 90s alt-rock rhythm tone, keep Gain low, turn Master up and let the fuzz do the work. <span class="new">New in 2.0</span></li>
+        <li><strong>FigChorus.</strong> A lush three-voice stereo chorus with Rate, Depth and Mix. <span class="new">New in 2.0</span></li>
+        <li><strong>Flanger.</strong> The classic jet-plane sweep in stereo, with Rate, Depth, Regen and Mix. <span class="new">New in 2.0</span></li>
+        <li><strong>Phaser.</strong> A four-stage phaser pedal in front of the amp, with one Speed knob that goes from a slow swoosh to a fast warble. Flip <strong>Light Phase</strong> for the smooth, slow sweep heard on so many late-70s rock records. <span class="new">New in 2.1</span></li>
+        <li><strong>Amps voiced against the real thing.</strong> Singer, Black Panel, Steel 50 and now Brit 45 are tuned against captures of real amps of their type. Brit 45, Chime 30 and Black Panel gain a power-amp phase inverter that gets richer as you crank them, and the Bright switch is clearly audible on every amp. <span class="new">New in 2.0</span></li>
         <li><strong>Touch-sensitive tube stages and power amp.</strong> The stages shift their bias when you dig in and recover as the note rings, and the class-AB power amp sags, saturates its transformer and leans on the speaker harder as you turn it up. <span class="new">New in 1.3</span></li>
         <li><strong>Input level and VU meter.</strong> An INPUT knob with a level light matches FigAMP to your interface, so every preset hits the amp the way it was designed to, and a needle VU meter shows what leaves the plugin. <span class="new">New in 1.3</span></li>
         <li><strong>Bass Mode and Blend.</strong> One switch opens up the deep lows in every amp and cab for bass guitar, and the Blend knob mixes your clean DI back in under the amp, already lined up in time and phase. <span class="new">New in 1.3.1</span></li>
         <li><strong>Console preamps.</strong> Four studio preamp flavours in front of the amp: Brit 73, NY 312, Brit 4K and London A.</li>
-        <li><strong>Cabinets.</strong> Fourteen guitar cabinets and two bass cabinets (4x10 and 1x15) with a mic position control, or load your own impulse responses. Eight of the guitar cabinets are new, made from our own speaker captures, and every speaker has been re-matched to measured curves. Your own IR files play at the same level as the built-in cabs. <span class="new">New in 1.6</span></li>
+        <li><strong>Cabinets.</strong> Eighteen guitar cabinets and two bass cabinets (4x10 and 1x15), grouped by type in the menu, with a mic position control, or load your own impulse responses. Many are made from our own speaker captures, and your own IR files play at the same level as the built-in cabs. <span class="new">New in 2.0</span></li>
         <li><strong>Delay.</strong> Syncs to your session tempo, with warm, darkening repeats and ping-pong.</li>
         <li><strong>Room.</strong> From a small studio room to a big hall.</li>
         <li><strong>Compressor.</strong> A pedal-style compressor in front of the amp, with Sustain and Level, for even picking and longer sustain.</li>
@@ -216,16 +221,18 @@
         <li><strong>Noise gate, Stereo/Mono and Polarity switches.</strong> Quiet high gain, the right width for any track, and a polarity flip for blending with a DI or a second amp.</li>
       </ul>
     </div>
-    <img src="img/amp-Steel50-1.6.6.jpg" width="1180" height="834" loading="lazy" alt="FigAMP with the new Steel 50 modern high-gain amp selected">
+    <img src="img/amp-Steel50-2.1.jpg" width="1400" height="834" loading="lazy" alt="FigAMP with the Steel 50 modern high-gain amp selected">
   </div>
 </section>
 
 <section>
   <div class="wrap split">
-    <img src="img/amp-Chime30-1.4.0.jpg" width="1180" height="834" loading="lazy" alt="FigAMP with the Chime 30 amp selected">
+    <img src="img/amp-Chime30-2.1.jpg" width="1400" height="834" loading="lazy" alt="FigAMP with the Chime 30 amp selected">
     <div>
       <h2>Made to be easy</h2>
       <ul class="ticks">
+        <li><strong>A window that fits your screen.</strong> Press SIZE to pick anything from 60% to 150%, or drag the bottom-right corner. FigAMP remembers the size for next time. <span class="new">New in 2.0</span></li>
+        <li><strong>Laid out in signal order.</strong> The boxes under the amp run left to right the way the sound flows: noise gate, compressor, phaser and preamp into the amp, then cabinet, FigChorus, Flanger, Stereo Shift, delay and room. <span class="new">New in 2.0</span></li>
         <li><strong>An amp head for every amp.</strong> Each amp has its own classic-style faceplate and knobs, so you always know which one you're playing, with metal toggle switches and lit status lights. <span class="new">New in 1.4</span></li>
         <li><strong>34 factory presets</strong> to start from, grouped by amp in the Preset menu, including a bass preset for every amp. <span class="new">Bass presets new in 1.3.1</span></li>
         <li><strong>Save your own presets.</strong> Name a sound once and it's in the Preset menu under <em>My presets</em>, in the plugin and the app alike.</li>
@@ -251,7 +258,7 @@
       </ul>
       <p style="margin-top:16px"><a href="/guides/record-bass-di-and-amp-at-home/">Read the bass DI and amp guide</a></p>
     </div>
-    <img src="img/amp-BassMode-1.4.0.jpg" width="1180" height="834" loading="lazy" alt="FigAMP with Bass Mode on, the Blend knob and the 1x15 bass cabinet selected">
+    <img src="img/amp-BassMode-2.1.jpg" width="1400" height="834" loading="lazy" alt="FigAMP with Bass Mode on, the Blend knob and the 1x15 bass cabinet selected">
   </div>
 </section>
 
@@ -343,7 +350,7 @@
 </main>
 <footer>
   <div class="wrap">
-    <div>© 2026 Fig Pro Audio · Aldana Consulting LLC · FigAMP 1.6.6</div>
+    <div>© 2026 Fig Pro Audio · Aldana Consulting LLC · FigAMP 2.1.0</div>
     <div><a href="why.html">Why FigAMP</a> · <a href="figguteq.html">FigGutEQ</a> · <a href="figstrip.html">FigSTRIP</a> · <a href="figtecheq.html">FigTECH EQ</a> · <a href="figverb.html">FigVERB</a> · <a href="https://aldana-consulting-llc.moonbase.sh/buy/figguteq">Buy FigGutEQ</a> · <a href="/guides/">Guides</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:support@figproaudio.com">support@figproaudio.com</a></div>
   </div>
   <div class="wrap" style="margin-top:12px;font-size:12px">All product names are Fig Pro Audio originals. FigAMP models classic amplifier styles and isn't affiliated with or endorsed by any amplifier or console maker.</div>

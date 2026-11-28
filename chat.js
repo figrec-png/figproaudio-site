@@ -13,11 +13,11 @@
   // ---------- Products ----------
   var P = {
     figamp: {
-      name: "FigAMP", role: "Guitar amp", page: "./", img: "img/figamp-1.4.0.jpg",
+      name: "FigAMP", role: "Guitar amp", page: "./", img: "img/figamp-2.1.jpg",
       price: 49, msrp: 99, priceNote: "On sale", mac: true, win: true,
-      line: "Eight touch-sensitive classic amps, guitar and bass cabinets, compressor, delay and room in one window.",
-      install: { mac: "run the installer, FigAMP-1.6.6-Mac.pkg. It's signed and notarized by Apple, asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places.",
-        win: "run FigAMP-1.6.6-Windows-Setup.exe. It installs the VST3 into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime is needed." },
+      line: "Eight touch-sensitive classic amps, fuzz, phaser, chorus, flanger, guitar and bass cabinets, compressor, delay and room in one resizable window.",
+      install: { mac: "run the installer, FigAMP-2.1.0-Mac.pkg. It's signed and notarized by Apple, asks for your Mac password and puts the Audio Unit, VST3 and standalone app in the right places.",
+        win: "run FigAMP-2.1.0-Windows-Setup.exe. It installs the VST3 into C:\\Program Files\\Common Files\\VST3 and the standalone app into Program Files, with a Start menu entry and an uninstaller. No extra Microsoft runtime is needed." },
       activate: "click Buy / Activate in the top right of FigAMP",
       formats: "Mac: macOS 11 or later, Apple Silicon or Intel, Audio Unit, VST3 and standalone. Windows: 10 or 11, 64-bit, VST3 and standalone."
     },
@@ -157,6 +157,14 @@
     { id: "bass", label: "Using FigAMP for bass",
       keys: ["bass", "bass guitar", "bass mode", "blend", "4x10", "1x15", "low end", "low b"],
       answer: function () { return "FigAMP works for bass: turn on Bass Mode (next to Bright) so the deep lows get through, pick the 4x10 or 1x15 bass cabinet, and turn up Blend to mix your clean DI back in under the amp (40 to 60% is a good start). FigAMP lines the two up for you, and every amp has a bass preset."; },
+      cards: function () { return ["figamp"]; } },
+    { id: "fx", label: "Fuzz, Phaser, FigChorus and Flanger",
+      keys: ["fuzz", "chorus", "figchorus", "flanger", "flange", "phaser", "light phase", "modulation", "wall of sound"],
+      answer: function () { return "FigAMP 2 adds four effects, all off until you switch them on: a Fuzz switch on every amp (next to Bass Mode) for a thick, scooped wall of fuzz, FigChorus (a three-voice stereo chorus with Rate, Depth and Mix) a Flanger (Rate, Depth, Regen and Mix) and, new in 2.1, a Phaser in front of the amp with a Speed knob and a Light Phase switch for a slow, smooth sweep. You can hear each one on the FigAMP page, under the amps."; },
+      cards: function () { return ["figamp"]; } },
+    { id: "resize", label: "Resize the FigAMP window",
+      keys: ["resize", "window size", "bigger", "smaller", "too big", "too small", "scale", "zoom", "size button"],
+      answer: function () { return "Press SIZE at the top of FigAMP and pick a size from 60% to 150%, or drag the bottom-right corner of the window. FigAMP remembers the size for next time."; },
       cards: function () { return ["figamp"]; } },
     { id: "ir", label: "Load my own cabinet IR",
       keys: ["ir", "impulse", "cab", "cabinet", "wav", "speaker"],
